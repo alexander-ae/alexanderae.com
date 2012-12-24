@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='{{ DEFAULT_LANG }}' itemscope {% block schema %}
+    itemtype='http://schema.org/Blog'{% endblock schema %}>
+<head>
+    {% block head %}
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    <meta charset="utf-8" />
+    <link rel="canonical" href="{{ SITEURL }}">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    {% block metadescripcion %}
+    <meta name='description' content="{{ META_DESCRIPTION}}">
+    {% endblock metadescripcion %}
+
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ ' ' }} Atom Feed" />
+    {% endif %}
+
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ ' ' }} RSS Feed" />
+    {% endif %}
+
+    {% endblock head %}
+
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700&text={{ SITENAME}}' rel='stylesheet' type='text/css'/>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono&text=!#$%&*+,-.(){}[]\<>-/1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20'" rel='stylesheet' type='text/css'/>
+
+    {% block css %}
+    {% assets filters="less,cssmin", output="css/style.min.css", "css/pygments.css", "css/reset.css" , "less/main.less" %}
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+    {% endassets %}
+
+    {% endblock css %}
+</head>
+
+<body id='blog'>
+    <header id="banner">
+        <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
+    </header>
+    <!-- /#banner -->
+    
+    <div id='content'>
+        <nav id="menu">
+            <div class="l">
+            {% for title, link in MENUITEMS %}
+                <a href="{{ link }}">{{ title }}</a>
+            {% endfor %}
+            </div>
+            <div class="r social">
+                <a href="/{{ FEED_ALL_RSS }}" target='_blank'><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB4klEQVR4Xu2by47DIAxFnVE/MYr6iVGUf2RWSCgKXNtgh1CONKsaxD01jy5mCSEE+mH+UMHoTAGoYHSmAFQwOh9UQES0fdcF1fTIsZ/whoMd8NbwRLy1FwVwJugdlCErAA18E6UscAuMzhSACkZnCkAFOTh37BtgPYRylCS85RapElAildOzDDMBKT3LUJ8BWo79DD2dH+4CIr2IeExA5GkJ6jOgtJeloWL9E+eDSQds33WJf6g2RSquBSYCUqQyvCWYC0jhivCU4Cog0pOERwQQ8brBQ4L6FrhbHAp0x/Zdl1LQYz+DZl4uTTsgPm6k3xwKKJ1PQlMBKVIZT0kwE5DCXTySYIGLACL+27/lC5ODm4AIJ4SnBPUtcF2kZGHWJ7uEZh3Q+snr1QXNBKRwRaAgnDlqMREQ4QRAEnJox10xFUDE74YcNWM5mAuIeO1pKW4CEBoJmjFXXAVo21k7joP6HZBy/SZKC0a//ryp7oC7MNqAmnGaMSlVAtDv+NxnmpbWjOFQJWAEuhNQ29JSHhNg1dJSzAT0EhBRJSAX8i3hiRq8A94U9o5qATVI5UnrOVRtgRGYAlDB6EwBuQ+8X2SWlLIUO2AECSgD3AJogp7hrH2Z/zn640wBqGB0pgBUMDr/LQfziFPRUEQAAAAASUVORK5CYII=" alt="rss" width="32" height="32" title='Feed RSS' class='social-rss'></a>
+                <a href='https://twitter.com/{{ TWITTER_USERNAME }}' target='_blank'><img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABo0lEQVR4Xu2bwW7CMBBEJ1U/sUL9RErpN6aHyJKFiMdJZs1m2XdDWYznee0kB6Z5nme8MR+sIDopgBVEJwWwguh8sgIAuHx/TazGI7frnd7haAecNTzQN/emgJ4BvMMyrApgXzwTrSx0C0QnBbCC6KQAVhCdFMAKopMCWEF0XAvoeZk5Stfb4EgeQ9efLR7PXXUAW/H6+u/PX6u0G1kH3K73+cgKsfCFUnfB/t+qkXZAbwhPSAUAi4StIrbWA/u+8wy5gIJqgmsc2W41ZgKAfd0wGpmA1ooUER5lyO4CwCKBhWTXRyPrgIJqb45C1gHeVrYXeQeMQNllMgHKSY1EJgA4pwSpAMBegnp8uQBgmaR6olbI7gI1VncEC6kmHXAmTARYrJTFmICRAEB7DqjGeYbJGVBTT37P2WAZHjDsgEc8hgcGCfAaHjDcAntCA+OCF6QC9oYujA4PiAWUAFtEvCJ0jVRA4dWhtjDkEPRMCmAF0UkBrCA6KYAVRCcFrF3Y8jTnnVaWZgdEkMAy0C3ABvBMz9yn/Ofom5MCWEF0UgAriM4/0O2aNu+6mOAAAAAASUVORK5CYII=" alt="twitter" width="32" height="32" title='{{ TWITTER_USERNAME }}' class='social-twitter'></a>
+                <a href="mailto:{{ EMAIL }}"><img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABy0lEQVR4Xu2bzY7CMBCDpysesar6iAjxjt3DKlKEktrzA2Kn813rxB6T0nJgOY7jkAvzgwTZqQKQIDtVABJkpwpAguxUAUiQnSoACbJzm13Y9nWZXfuPPO7P4W+ey5+AKgAJslMFIEF2pk8Bhtk366fxPLFcJ8BjHIU3g6sAEX8ADxHerlug0YJ86paIGLzhPgE9kcFmRHuoCmA+4eiAPczeTMYeVQEinMG2rwsTloXdj8n2iroAkT8jxowJjWD2YPOMMBXQYEyZAWYwa5kMZ7gKEOECsEe4weoZb4S7ABE+CDMUoxHhPREhBYjw9+HZgMzwrA9LWAEaRoMyw7+DkDfBhmYIjbZn29flK0+AdSALkV4hBUQGYonydBeAgli/tJh1yJvBVQAK0A/ADDTSoTUoA8JcADKeBT8byLJGBGc5w1QAMkSBR9cta3pQphnqxyAyQkEbrK7ncX8e6EVKu6/qBEQN7wF5oIyvqAo4AwWLJNIrpIDIQCxRnu4CooJYiPB2FRARwIs3g7kAr3EkniymAjyG78KaSf0eIKJ/1HwzphOQiSoACbJTBSBBdpb6z9DFqQKQIDtVABJkpwpAguxUAUiQnSoACbLzC6Pj6W7v8o9wAAAAAElFTkSuQmCC" alt="mail" width="32" height="32" title='{{ EMAIL }}' class='social-email'></a>
+            </div>
+            <div class="clear"></div>
+        </nav>
+        
+        <!-- /#menu -->
+
+        {% block content %}
+        {% endblock %}
+
+        <footer id='footer'>
+            <div class='footer-line'></div>
+            <nav id='footer-content'>
+                {% for title, link in FOOTER_LINKS %}
+                    <a href="{{ link }}" title="{{ title }}">{{ title }}</a>
+                {% endfor %}
+                <span class="license r">El contenido se publica bajo licencia{{' '}} <a href="http://creativecommons.org/licenses/by-sa/3.0/" target='_blank'>Creative Commons</a></span>
+            </nav>
+                
+            <div class='footer-line'></div>
+        </footer>
+    </div>
+    {% block js %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(function() {
+            /* addClass 'active' */
+            $('a').each(function(){
+                if ($(this).attr('href') === window.location.pathname ) {
+                    $(this).addClass('active');
+                };        
+            })
+            if ( window.location.pathname === '/') {
+                $('.first-page').addClass('active');
+            };
+            /* Google plus */
+            window.___gcfg = {lang: 'es-419'};
+            (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        });
+    </script>
+    {% endblock js %}
+    {% include "analytics.html" %}
+</body>
+</html>
