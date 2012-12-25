@@ -5,9 +5,12 @@
     {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
+    <meta name="author" content="{{ AUTHOR }}">
+    <meta name="google-site-verification" content="{{ GOOGLE_SITE_VERIFICATION }}" />
     <link rel="canonical" href="{{ SITEURL }}">
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
     <link rel="apple-touch-icon" href="/favicon.png">
+    <link rel="author" href="/humans.txt" />
 
     {% block metadescripcion %}
     <meta name='description' content="{{ META_DESCRIPTION}}">
