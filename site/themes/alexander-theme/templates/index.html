@@ -7,8 +7,8 @@
 {% endblock %}
 
 {% for article in articles_page.object_list %}        
-    <article class="entry">
-        <div class="entry-l l">
+    <article class="entry columns">
+        <div class="column thirteen">
             <header>
                 <h2 class="entry-title">
                     <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink a{{ " " }}{{ article.title}}">{{ article.title }}</a>
@@ -22,7 +22,7 @@
                 <div class="clear"></div>
             </footer>
         </div>
-        <div class="entry-r r date" data-date='{{ article.locale_date }}'>
+        <div class="date column three" data-date='{{ article.locale_date }}'>
             <div class="month">
                 <span class="month">{{ article.locale_date.split()[1] }}</span>
                 <div class="day">
@@ -30,8 +30,6 @@
                 </div>
             </div>
         </div>
-        <div class="clear"></div>
-        
     </article>
 {% endfor %}
 <!-- posts-list -->

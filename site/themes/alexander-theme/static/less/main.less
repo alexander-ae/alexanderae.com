@@ -1,14 +1,35 @@
 /* CONSTANTES */
 
- @white: #FFF;
+// colores
+@blanco: #FFF;
+
+@gris_01: #ECECEC;
+@gris_02: #DDD;
+@gris_03: #AAA;
+@gris_04: #C0C0C0;
+
+@gris_oscuro_01: #666;
+@gris_oscuro_02: #555753;
+@gris_oscuro_03: #444;
+
+@azul_oscuro_01: #004E63;
+@azul_oscuro_02: #0844A4;
+@azul_oscuro_03: #033076;
+
+@verde_oscuro_01: #243E16;
+@verde_oscuro_02: #456E14;
+
+@naranja_01: #AF3A11;
+
+@celeste_01: #6490B0;
 
 /* BASE */
 
 a{
-    color: #0844A4;
+    color: @azul_oscuro_02;
     text-decoration: none;
     &:hover, &.active{
-        color: #033076;
+        color: @azul_oscuro_03;
     }
 }
 
@@ -16,8 +37,9 @@ em{
   font-style: italic;
 }
 
-strong{
-  color: #021F54;
+strong, b{
+  color: @azul_oscuro_01;
+    font-weight: normal;
 }
 
 sup {
@@ -25,13 +47,17 @@ sup {
     font-size: 12px;
 }
 
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
 p{
     img{
         display: block;
         margin: 10px auto;
-        border: 1px solid #ececec;
+        border: 1px solid @gris_01;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
-        background: #FFF;
+        background: @blanco;
         padding: 5px;
     }
 }
@@ -57,7 +83,7 @@ p{
 
 .footer-line{
     height: 4px;
-    background: #243E16;
+    background: @verde_oscuro_01;
 }
 
 .footnote{
@@ -71,8 +97,8 @@ p{
     hr{
         padding: 0;
         border: none;
-        border-top: 5px double #ddd;
-        color: #666;
+        border-top: 5px double @gris_02;
+        color: @gris_oscuro_01;
         text-align: center;
         height: 20px;
     }
@@ -84,7 +110,7 @@ p{
         top: -12px;
         font-size: 19px;
         padding: 0 4px;
-        background: white;
+        background: @blanco;
         font-style: oblique;
         font-weight: bold;
     }
@@ -94,21 +120,20 @@ p{
 
 body{
     font-family: 'Droid Sans', sans-serif;
-    min-width: 720px;
 }
 
 #banner{
     height: 120px;
     line-height: 120px;
-    width: 100%;
     background-image: url('../images/background-header.jpg');
     h1{
         font-family: 'Cabin Sketch', bold;
         font-size: 54px; 
         font-weight: bold;
         padding: 0 1em;
+        line-height: inherit;
         a{
-            color: @white;
+            color: @blanco;
         }
     }
 }
@@ -117,13 +142,15 @@ body{
     font-size: 16px;
     margin: 16px 0;
     a{
-        color: #004E63;
-        margin: 0 12px;
+        color: @azul_oscuro_01;
+        font-size: 16px;
         &:hover, &.active{
-            color: #AF3A11;
+            color: @naranja_01;
         }
     }
-
+    &>div{
+        height: 36px;
+    }
     .social a{
         margin: 0 4px;
     }
@@ -131,57 +158,51 @@ body{
     .social-email,
     .social-twitter,
     .social-rss{
-        background: #555753;
+        background: @gris_oscuro_02;
     }
 
     .social-twitter:hover{
-        background: #6490B0;
+        background: @celeste_01;
     }
 
     .social-rss:hover{
-        background: #AF3A11;
+        background: @naranja_01;
     }
 
     .social-email:hover{
-        background: #456E14;
+        background: @verde_oscuro_02;
     }
 }
 
 #content{
-    margin: 5px auto;
-    max-width: 960px;
-    padding: 0 20px;
-
     .entry-title{
-        color: #AF3A11;
+        color: @naranja_01;
         font-weight: bold;
         a{
-            color: #AF3A11;
+            color: @naranja_01;
         }
     }
 }
 
 #footer{
-    margin: 50px 0 25px;
+    margin: 25px 0;
 }
 
 #footer-content{
     font-size: 16px;
     margin: 7px 0px;
+    width: auto;
 
     a{
-        color: #021F54;
-        margin: 0px 12px;
+        color: @azul_oscuro_03;
         &:hover, &.active{
-            color: #AF3A11;
+            color: @naranja_01;
         }
     }
 
     .license{
         font-size: 13px;
-        a{
-            margin: 0;
-        }
+        margin: 0;
     }
 }
 
@@ -191,8 +212,8 @@ body{
     a{
         width: 36px;
         height: 28px;
-        background-color: #555753;
-        color: @white;
+        background-color: @gris_oscuro_02;
+        color: @blanco;
         display: inline-block;
         margin-right: 6px;
     }
@@ -206,7 +227,7 @@ body{
     }
 
     .active{
-        background-color: #AF3A11;
+        background-color: @naranja_01;
     }
 }
 
@@ -217,51 +238,35 @@ body{
 }
 
 .entry{
-    background: #AAA;
-    border: #444 solid 2px;
+    background: @gris_03;
+    border: @gris_oscuro_03 solid 2px;
     margin: 20px 0;
     min-height: 200px;
     position: relative;
     font-size: 15px;
+    padding: 20px 0 20px 20px;
 
     .entry-l{
-        padding: 20px 0 20px 40px;
-        width: 80%;
-
         header h2{
-            color: #AF3A11;
-            font-size: 28px;
+            color: @naranja_01;
+            font-size: 26px;
         }
 
         .entry-content{
-            margin: 20px 0;
             line-height: 150%;
         }
-
-        p{
-            margin: 5px 0;
-        }
-    }
-
-    .entry-r{
-        display: inline-block;
-        
-        height: 100%;
-        right: 0;
-        position: absolute;
-        margin-right: 20px;
     }
 
     div.month{
         width: 90px;
         height: 60px;
-        background: #606060;
+        background: @gris_oscuro_01;
         text-align: center;
         margin: 25px auto;
         padding: 4px;
         span.month{
             text-transform:capitalize;
-            color: #C0C0C0;
+            color: @gris_04;
             font-size: 26px;
         }
     }
@@ -269,21 +274,20 @@ body{
     div.day{
         width: 55px;
         height: 20px;
-        background: #444;
+        background: @gris_oscuro_03;
         margin: 2px auto;
         padding: 4px;
         text-align: center;
         span.day{
-
-            color: #FFF;
+            color: @blanco;
             font-size: 14px;
         }
     }
 
     .tags a{
-        color: #0844A4;
+        color: @azul_oscuro_02;
         &:hover{
-            color: #033076;
+            color: @azul_oscuro_03;
         }
     }
 }
@@ -306,7 +310,7 @@ body{
         }
     }
     .article-title{
-        color: #AF3A11;
+        color: @naranja_01;
         font-size: 32px;
     }
 
@@ -370,7 +374,7 @@ body{
     
     h1{
         font-size: 28px;
-        color: #AF3A11;
+        color: @naranja_01;
         margin: 8px 0 16px;
     }
 }

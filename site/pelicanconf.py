@@ -37,7 +37,7 @@ FOOTER_LINKS = (('Blog', '/'),
 
 
 PLUGINS = ['pelican.plugins.assets', 'pelican.plugins.sitemap',
-            'pelican.plugins.gzip_cache']
+           'pelican.plugins.gzip_cache']
 JINJA_EXTENSIONS = ['jinja2.ext.do', 'jinja2htmlcompress.HTMLCompress']
 
 SHOW_AUTHOR = True
@@ -47,7 +47,7 @@ META_DESCRIPTION = '''Sitio personal de __alexander__: Encontraras
     en python, desarrollo web en general entre otros'''
 
 THEME = 'themes/alexander-theme'
-STATIC_PATHS = ['pictures',]
+STATIC_PATHS = ['pictures']
 
 SITEMAP = {
     'format': 'xml',
