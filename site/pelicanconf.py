@@ -24,6 +24,7 @@ DEFAULT_PAGINATION = 3
 DEFAULT_CATEGORY = "Sin categoría"
 MARKUP = ('md',)
 RELATIVE_URLS = False
+SUMMARY_MAX_LENGTH = 56
 
 # Links
 MENUITEMS = (('Blog', '/'),

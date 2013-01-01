@@ -88,10 +88,11 @@ p{
 
 .footnote{
     margin-top: 32px;
-    font-size: 14px;
+    font-size: 13px;
+    
     ol{
         list-style: outside decimal;
-        margin: 10px 0 10px 27px;
+        margin: 0 0 10px 25px;
     }
 
     hr{
@@ -100,7 +101,8 @@ p{
         border-top: 5px double @gris_02;
         color: @gris_oscuro_01;
         text-align: center;
-        height: 20px;
+        height: 0;
+        margin: 20px 0 0;
     }
 
     hr:after {
@@ -113,6 +115,10 @@ p{
         background: @blanco;
         font-style: oblique;
         font-weight: bold;
+    }
+
+    p{
+        font-size: 13px;
     }
 }
 
@@ -246,16 +252,15 @@ body{
     font-size: 15px;
     padding: 20px 0 20px 20px;
 
-    .entry-l{
-        header h2{
-            color: @naranja_01;
-            font-size: 26px;
-        }
-
-        .entry-content{
-            line-height: 150%;
-        }
+    
+    header{
+        margin-bottom: 10px;
     }
+
+    .entry-content{
+        line-height: 150%;
+    }
+    
 
     div.month{
         width: 90px;

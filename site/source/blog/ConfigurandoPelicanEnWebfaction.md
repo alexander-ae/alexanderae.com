@@ -1,6 +1,6 @@
 Title: Configurando Pelican en webfaction
 Date: 2012-12-25 15:38
-Tags: pelican, webfaction
+Tags: pelican, webfaction, back-end
 Slug: configurando-pelican-en-webfaction
 Author: __alexander__
 
