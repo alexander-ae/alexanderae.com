@@ -1,6 +1,6 @@
 Title: Resetear password de PostgreSQL
 Date: 2013-01-12 10:27
-Tags: postgresql, Base de datos
+Tags: postgresql, base-de-datos
 Slug: recuperar-password-de-postgresql
 Author: __alexander__
 

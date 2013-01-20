@@ -16,7 +16,7 @@ TAG_FEED_RSS = None
 
 # Local
 TIMEZONE = 'America/Lima'
-DEFAULT_LANG = 'es_ES'
+DEFAULT_LANG = 'es'
 DEFAULT_DATE_FORMAT = '%d %b %Y'
 LOCALE = ('es_ES',)
 
@@ -30,6 +30,7 @@ SUMMARY_MAX_LENGTH = 56
 MENUITEMS = (('Blog', '/'),
              ('Archivos', '/archives.html'),
              ('Etiquetas', '/tags.html'),
+             (u'Buscar aquí', '/pages/buscar.html'),
              )
 
 FOOTER_LINKS = (('Blog', '/'),

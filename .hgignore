@@ -53,6 +53,7 @@ data/*
 .coverage
 *.directory
 *.pid
+site/themes/alexander-theme/static/less/main.css
 
 # switch to regexp syntax.
 syntax: regexp
