@@ -17,7 +17,7 @@ Lo que sí haré, será enumerar algunos buenos artículos sobre la comparación
 
 En mi caso, prefiero **Foundation** por el facil manejo que me da sobre la cuadrícula, por el que las clases me parecen más intuitivas y porque me da un mayor control sobre los estilos (*lo cual a mi parecer es excelente*).
 
-Tal vez cuando desarrolle una mayor cantidad de sitios con Foundation pueda dar una mayor completa opinion, después de todo ambos frameworks son muy buenos y todo depende de nuestras necesidades, y como dicen:
+Tal vez cuando desarrolle una mayor cantidad de sitios con Foundation pueda dar una más completa opinion, después de todo ambos frameworks son muy buenos y todo depende de nuestras necesidades, y como dicen:
     
 > 'No hay herramienta mala, sino herramienta en malas manos'
 

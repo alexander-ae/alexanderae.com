@@ -51,6 +51,7 @@ sup {
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
+    color: @naranja_01;
 }
 
 p{
@@ -236,7 +237,7 @@ body{
         width: 16px;
         height: 16px;
         display: block;
-        margin: 6px 10px;
+        margin: 4px 10px;
         text-align: center;
     }
 
@@ -347,6 +348,13 @@ body{
         li{
             margin: 5px;
         }
+
+        h4{
+            font-size: 18px;
+        }
+        h5{
+            font-size: 14px;
+        }
     }
 
     .real-footer{
@@ -430,6 +438,20 @@ body{
     }
 }
 
+.body.tag{
+    ol{
+        list-style-type: none;
+        li{
+            margin: 0 0 20px;
+            a{
+                color: #2ba6cb;
+                &:hover{
+                    color: #2795b6;
+                }
+            }
+        }
+    }
+}
 
 /* Small devices */
 @media only screen and (max-width: 480px) {
