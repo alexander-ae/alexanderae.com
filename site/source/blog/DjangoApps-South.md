@@ -1,6 +1,6 @@
 Title: Django Apps: South
 Date: 2013-01-25 18:50
-Tags: django, django-apps
+Tags: django, django-apps, base-de-datos
 Slug: django-apps-south
 Author: __alexander__
 
