@@ -5,8 +5,9 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-SITEURL = 'http://127.0.0.1:8000'
+SITEURL = 'http://alexanderae.com'
 
+OUTPUT_PATH = '/home/alcaudon/webapps/alexander_ae_site'
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing

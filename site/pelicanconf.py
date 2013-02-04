@@ -3,7 +3,7 @@
 
 AUTHOR = u"__alexander__"
 SITENAME = u"Alexander A. E. - log"
-SITEURL = 'http://127.0.0.1:8000'
+SITEURL = 'http://alexanderae.com'
 
 # Feed
 FEED_DOMAIN = SITEURL
