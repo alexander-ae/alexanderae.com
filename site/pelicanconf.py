@@ -3,7 +3,7 @@
 
 AUTHOR = u"__alexander__"
 SITENAME = u"Alexander A. E. - log"
-SITEURL = 'http://alexanderae.com'
+SITEURL = 'http://127.0.0.1:8000'
 
 # Feed
 FEED_DOMAIN = SITEURL
@@ -11,8 +11,8 @@ FEED_ALL_ATOM = 'feeds/all.atom.xml'
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_ATOM = None
 CATEGORY_FEED_RSS = None
-TAG_FEED_ATOM = None
-TAG_FEED_RSS = None
+TAG_FEED_ATOM = 'feeds/%s.atom.xml'
+TAG_FEED_RSS = 'feeds/%s.rss.xml'
 
 # Local
 TIMEZONE = 'America/Lima'
