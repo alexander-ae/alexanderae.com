@@ -28,6 +28,7 @@ SUMMARY_MAX_LENGTH = 56
 
 # Links
 MENUITEMS = (('Blog', '/'),
+             ('Labs', '/pages/labs.html'),
              ('Archivos', '/archives.html'),
              ('Etiquetas', '/tags.html'),
              (u'Buscar aquí', '/pages/buscar.html'),

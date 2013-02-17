@@ -70,7 +70,7 @@ con lo que se crea la única tabla de nuestro aplicación, la cual podemos obser
 
 ![admin: Libro][admin-libro-01]
 
-- Después de ingresar algunos libros, nos piden que la aplicación también debe de ser capaz de registrar los capítulos por cada libro, por lo que añadimos el modelo correspondiente:
+- Después de ingresar algunos libros, nos piden que la aplicación también deba de ser capaz de registrar los capítulos por cada libro, por lo que añadimos el modelo correspondiente:
 
 ![proyecto-models][proyecto-models]
 
