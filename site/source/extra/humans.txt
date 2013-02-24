@@ -24,4 +24,4 @@ Icons:
 
 Standards: HTML5, CSS3
 Components: jQuery.
-Software: Chakra Linux, Sublime Text, Google Chrome
+Software: Chakra Linux, Sublime Text, Google Chrome, Bitbucket

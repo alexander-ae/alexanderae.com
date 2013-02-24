@@ -4,7 +4,7 @@ Tags: jquery, js
 Slug: jquery-stickybox
 Author: __alexander__
 
-Plugin para jquery que genera bloques flotantes siguen al usuario cuando se desplaza la página. Utiliza posicionamiento absoluto en base a los estilos css iniciales.
+Plugin para jquery que genera bloques flotantes que siguen al usuario cuando se desplaza la página. Utiliza posicionamiento absoluto para reajustar la posición en base a los estilos css iniciales.
 
  Por ejemplo, se podría usar en los siguientes casos:
 
