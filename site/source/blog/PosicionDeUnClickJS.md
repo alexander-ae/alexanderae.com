@@ -111,7 +111,7 @@ else{ // chrome
 ~~~
 
 #### demo
-A modo de ejemplo, armé una demo en la que se trata de dibujar un punto de 2x2 en la posición en la que se realiza un click tal y como muestra la siguiente captura:
+A modo de [ejemplo][demo], armé una [demo][demo] en la que se trata de dibujar un punto de 2x2 en la posición en la que se realiza un click tal y como muestra la siguiente captura:
 
 ![demo][demo-img]
 
@@ -140,6 +140,7 @@ Código en bitbucket del ejemplo: [demo][repo-demo] (el directorio es: posicion-
 [offsetX-firefox]: https://bugzilla.mozilla.org/show_bug.cgi?id=69787
 [offsetX-firefox-stackoverflow]: http://stackoverflow.com/q/12704686/1472750
 [repo-demo]: https://bitbucket.org/__alexander__/alexander-ae-site-static-demos
+[demo]: http://labs.alexanderae.com/posicion-relativa-de-un-click/
 
 [demo-img]: /static/pictures/posicion-de-un-click-demo.png 'Demo'
 [demo-img-firefox]: /static/pictures/posicion-de-un-click-demo-firefox.png 'Consola en firefox'
