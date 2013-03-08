@@ -39,7 +39,7 @@
     {% endblock css %}
 </head>
 
-<body id='blog' class='sixteen'>
+<body class='sixteen -{% block mainClass %}{% endblock mainClass %}'>
     <header id="banner" class='sixteen'>
         <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
     </header>

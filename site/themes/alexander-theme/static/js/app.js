@@ -25,10 +25,13 @@
     $('a').each(function(){
         if ($(this).attr('href') === window.location.pathname ) {
             $(this).addClass('active');
-        };        
+        };
     })
     if ( window.location.pathname === '/') {
         $('.first-page').addClass('active');
+    };
+    if ($('body').hasClass('home')) {
+        $('a.footnote-ref').parent().remove();
     };
 
     /* Google plus */
