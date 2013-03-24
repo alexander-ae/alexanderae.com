@@ -25,6 +25,8 @@
 
 @celeste_01: #6490B0;
 
+@color_em: #af3a11;
+
 /* BASE */
 
 a{
@@ -41,11 +43,11 @@ abbr{
 
 em{
     font-style: normal;
-    color: #af3a11;
+    color: @color_em;
 }
 
 strong, b{
-    color: @azul_oscuro_01;
+    color: darken(@color_em, 10%);
     font-weight: normal;
 }
 
@@ -91,7 +93,12 @@ p{
     span {
         line-height: 150%;
     }
+
+    .err {
+        background-color: transparent;
+    }
 }
+
 
 .footer-line{
     height: 4px;
