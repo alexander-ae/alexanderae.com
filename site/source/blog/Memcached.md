@@ -116,7 +116,7 @@ Como adicional, el archivo de configuración y scripts necesarios para administr
     [Service]
     EnvironmentFile=/etc/sysconfig/memcached.config
     ExecStart=/usr/local/bin/memcached -p ${PORT} -u ${USER} -m ${CACHESIZE} -c ${MAXCONN} -P ${PID} $OPTIONS
-    ExecStop=/bin/kill -9 'cat ${PID}'; rm ${PID}
+    ExecStop=/bin/kill -9 'cat ${PID}'; /bin/rm ${PID}
      
     [Install]
     WantedBy=multi-user.target
