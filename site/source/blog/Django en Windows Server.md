@@ -13,7 +13,7 @@ No olvidar que debemos de escoger la versión adecuada para nuestra versión de 
 
 *3.* Añadir al path el directorio de python y sus scripts, por ejemplo:
 
-    C:\Python27;C:\Python27/Scripts;..
+    C:\Python27;C:\Python27\Scripts;..
 
 Podemos comprobar lo realizado hasta aquí, ingresando a la ventana de comandos (cmd):
 
@@ -42,15 +42,15 @@ Note que debemos escoger la versión que corresponda a nuestro python instalado.
 
 - - -
 
-*8.* Descargamos nuestro proyecto en django mediante [filezilla][filezilla] o cualquier otra herramienta.
+*9.* Descargamos nuestro proyecto en django mediante [filezilla][filezilla] o cualquier otra herramienta.
 
-*9.* Configuramos la base de datos en el archivo [settings.py][settings.py]. Para comprobar si el proyecto inicia en modo "desarrollo", podemos abrir el cmd y escribir:
+*10.* Configuramos la base de datos en el archivo [settings.py][settings.py]. Para comprobar si el proyecto inicia en modo "desarrollo", podemos abrir el cmd y escribir:
 
     python manage.py runserver
 
 Ir a la ruta [http://127.0.0.1:8000][local-8000] y observar si el sitio web se visualiza de forma correcta.
 
-*10.* Configuramos la ruta para el directorio static con el parámetro:
+*11.* Configuramos la ruta para el directorio static con el parámetro:
 
     STATIC_ROOT
 
@@ -58,7 +58,7 @@ recolectamos los archivos static:
 
     python manage.py collectstatic
 
-*11.* Configuramos el archivo wsgi para que quede similar a:
+*12.* Configuramos el archivo wsgi para que quede similar a:
 
     import os, sys  
       
@@ -72,12 +72,12 @@ recolectamos los archivos static:
 
 
 
-*12.* Descargamos el módulo [mod_wsgi][mod_wsgi] para apache, el cual permite conectar el mismo con nuestras aplicaciones en python que soporten [wsgi][wsgi].
+*13.* Descargamos el módulo [mod_wsgi][mod_wsgi] para apache, el cual permite conectar el mismo con nuestras aplicaciones en python que soporten [wsgi][wsgi].
 Una vez descargada la versión correspondiente a nuestro python, renombramos el archivo a **mod_wsgi.so** y lo copiamos a la carpeta *modules* de nuestro apache, la cual puede tener una ruta similar a:
 
     C:\wamp\bin\apache\apache2.2.22\modules
 
-*13.* Configuramos apache, por medio del archivo *httpd.conf*
+*14.* Configuramos apache, por medio del archivo *httpd.conf*
 
 Añadimos el módulo mod_wsgi
 >    LoadModule wsgi_module modules/mod_wsgi.so
