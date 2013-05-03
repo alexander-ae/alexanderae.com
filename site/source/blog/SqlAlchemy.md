@@ -1,6 +1,6 @@
 Title: SqlAlchemy: ORM para python - I
 Date: 2013-04-28 16:27
-Tags: python, base-de-datos
+Tags: python, base-de-datos, sqlalchemy
 Slug: sqlalchemy-orm-para-python-1
 Author: __alexander__
 
