@@ -32,16 +32,16 @@ Se pueden observar 3 ejemplos sencillos [aquí][labs].
 
 **HTML**
 
-~~~~
+~~~
 ::html
 <canvas id="canvas1" width='480' height='320'></canvas>
-~~~~
+~~~
 
 **JS**
 
 Primero asignamos el canvas a una variable. Luego, podemos invocar a los métodos requeridos para dibujar figuras geométricas, como *drawArc* para arcos indicando las propiedades deseadas mediante un objeto en [json][json]. Es posible incluso concatenar los métodos.
 
-~~~~
+~~~
 ::jquery
 var $canvas1 = $("#canvas1");
 
@@ -61,11 +61,11 @@ $canvas1.drawArc({
   radius: 18,
   start: 30, end: 280
 });
-~~~~
+~~~
 
 Podemos también, graficar elipses y rectángulos; asi como superponerlos, usar rgba, entre otros.
 
-~~~~
+~~~
 ::jquery
 $canvas1.drawEllipse({
   fillStyle: "rgba(108, 96, 256, 0.5)",
@@ -86,7 +86,7 @@ $canvas1.drawRect({
   height: 30,
   fromCenter: false
 });
-~~~~
+~~~
 
 - - -
 
@@ -98,7 +98,7 @@ $canvas1.drawRect({
 
 Considerando, el alto y ancho del canvas asi como el tamaño de la cuadrícula, la graficamos mediante rectas, las cuales guardamos como capas bajo el mismo grupo.
 
-~~~~
+~~~
 ::jquery
 /* canvas 2 */
 var $canvas2 = $("#canvas2");
@@ -128,11 +128,11 @@ for (i = 0; i<w; i=i+grid) {
     x2: i, y2: h
   });
 }
-~~~~
+~~~
 
 Por medio de un botón, mostramos u ocultamos el grupo de capas.
 
-~~~~
+~~~
 ::jquery
 // mostrar/ocultar
 var $show_hide_grid = $('#show_hide_grid');
@@ -154,7 +154,7 @@ $show_hide_grid.click(function() {
     grid_visible = true;
   }
 });
-~~~~
+~~~
 
 - - -
 
@@ -166,7 +166,7 @@ $show_hide_grid.click(function() {
 
 Creamos la esfera:
 
-~~~~
+~~~
 ::jquery
 var $canvas3 = $("#canvas3");
 
@@ -177,11 +177,11 @@ $canvas3.drawArc({
   x: 240, y: 20,
   radius: 10
 });
-~~~~
+~~~
 
 Creamos la animación^1 y la iniciamos. Notar que hemos concatenado 2 animaciones, una para la caida al finalizar se ejecuta la subida. La función es recursiva, por lo que nunca termina.
 
-~~~~
+~~~
 ::jquery
 var rebote = function(){
   $canvas3.animateLayer('esfera',
@@ -198,7 +198,7 @@ var rebote = function(){
 
 /* inicializa */
 rebote();
-~~~~
+~~~
 
 - - -
 
