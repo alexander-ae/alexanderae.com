@@ -50,6 +50,16 @@ Una vez listo lo anterior,podríamos acceder por ssh al servidor B sin necesidad
 
 - - -
 
+##### Actualización
+
+Un método mucho más simple para copiar nuestra clave ssh al servidor al que accederemos es mediante el comando *ssh-copy-id*:
+
+        ssh-copy-id -i .ssh/id_rsa.pub user@host
+
+Lo cual resulta mucho más veloz que el método anterior.
+
+- - -
+
 ##### Referencias
 
 1. SSH login without password: [linuxproblem.org][linuxproblem.org]
