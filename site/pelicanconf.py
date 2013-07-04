@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+from __future__ import unicode_literals
+
 AUTHOR = u"__alexander__"
 SITENAME = u"Alexander A. E. - log"
 SITEURL = 'http://127.0.0.1:8000'
@@ -38,9 +40,8 @@ FOOTER_LINKS = (('Blog', '/'),
                ('Sobre mi', '/pages/about-me.html'),
                 )
 
-
-PLUGINS = ['pelican.plugins.assets', 'pelican.plugins.sitemap',
-           'pelican.plugins.gzip_cache']
+PLUGIN_PATH = '/home/alexander/Proyectos/pelican-plugins'
+PLUGINS = ['assets', 'sitemap', 'gzip_cache', 'optimize_images']
 JINJA_EXTENSIONS = ['jinja2.ext.do', 'jinja2htmlcompress.HTMLCompress']
 
 SHOW_AUTHOR = True

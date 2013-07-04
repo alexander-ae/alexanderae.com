@@ -22,10 +22,11 @@
 @verde_oscuro_02: #456E14;
 
 @naranja_01: #AF3A11;
+@naranja_02: darken(@naranja_01, 10%);
 
 @celeste_01: #6490B0;
 
-@color_em: #af3a11;
+@color_em: @naranja_01;
 
 /* BASE */
 
@@ -89,7 +90,8 @@ dt{
     clear: both;
 }
 
-.codehilite{
+.highlight{
+    background: #272822;
     font-family: 'Droid Sans Mono';
     font-size: 15px;
     margin: 15px;
@@ -495,9 +497,9 @@ body{
         li{
             margin: 0 0 20px;
             a{
-                color: #2ba6cb;
+                color: @naranja_01;
                 &:hover{
-                    color: #2795b6;
+                    color: @naranja_02;
                 }
             }
         }

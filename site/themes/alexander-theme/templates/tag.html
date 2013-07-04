@@ -6,26 +6,27 @@
 {% block title %}{{ SITENAME }}&nbsp;:&nbsp;{{ tag }}{% endblock %}
 {% block content %}        
 {% if articles %}
-        <section id="content" class="body tag">
-          <ol id="posts-list" class="hfeed" start="{{ articles_paginator.per_page -1 }}">
-  {% for article in articles_page.object_list %}
-              <li>     
-              <article class="hentry">    
-                <header>
-                  <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink a {{ article.title}}">{{ article.title }}</a></h2>
-                </header> 
-                <div class="entry-content">
-                  {{ article.summary }}
-                  <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">leer más</a>
-                </div><!-- /.entry-content -->
-              </article>
-            </li>
-    {% if loop.last %}
-      {% include 'pagination.html' %}
-    {% endif %}
-{% endfor %}
-     </ol><!-- /#posts-list -->
-    </section><!-- /#content -->
+  <section id="content" class="body tag">
+    <ol id="posts-list" class="hfeed" start="{{ articles_paginator.per_page -1 }}">
+      {% for article in articles_page.object_list %}
+        <li>
+        <article class="hentry">    
+          <header>
+            <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink a {{ " " }} {{ article.title}}">{{ article.title }}</a></h2>
+          </header> 
+          <div class="entry-content">
+            {{ article.summary }}
+            <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">leer más</a>
+          </div><!-- /.entry-content -->
+        </article>
+        <hr>
+        </li>
+        {% if loop.last %}
+          {% include 'pagination.html' %}
+        {% endif %}
+      {% endfor %}
+    </ol><!-- /#posts-list -->
+  </section><!-- /#content -->
 {% else %}
   <section id="content" class="body">    
     <h2>Paginas</h2>{% for page in PAGES %}

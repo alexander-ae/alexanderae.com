@@ -10,15 +10,15 @@ Fragmentos de código para limpiar o resetear formularios en JS. Note que "limpi
 
 Para resetear formularios existe un [método][reset-form] de los forms:
 
-~~~~
+~~~
 ::javascript
 document.getElementById("test-form").reset();
-~~~~
+~~~
 
 ####Clear form
 Para limpiar formularios en cambio, tenemos que escribir nuestra propia función, como por ejemplo[^1]:
 
-~~~~
+~~~
 ::javascript
 function clearForm(oForm) {
 
@@ -56,14 +56,14 @@ function clearForm(oForm) {
     }
   }
 }
-~~~~
+~~~
 
 y la llamamos mediante:
 
-~~~~
+~~~
 ::javascript
 clearForm(form);
-~~~~
+~~~
 
 #### demo
 A modo de ejemplo, puede visitar el siguiente [link][demo].
