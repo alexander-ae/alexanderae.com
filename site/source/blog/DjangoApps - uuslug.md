@@ -61,7 +61,7 @@ Para generar un slug cualquiera, podemos usar su propia función *slugify*:
 >>> slugify('This is a test ---')
     'this-is-a-test'
 >>> slugify('explosión')
-    'explosión'
+    'explosion'
 ~~~~
 
 Y si deseamos autogener un slug único en un modelo, por ejemplo para el caso de las noticias:
