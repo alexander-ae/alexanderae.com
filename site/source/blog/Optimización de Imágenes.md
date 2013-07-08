@@ -55,7 +55,7 @@ Site: [optipng][optipng]
 
 Modo de Uso:
 
-        ./optipng -o 2 origen.png -out optipng.png
+        optipng -o 2 origen.png -out optipng.png
 
 - - -
 ##### PNGQuant
@@ -66,7 +66,7 @@ Sitio: [pngquant][pngquant]
 
 Modo de Uso:
 
-        pngcuant origen.png --ext -pngquant.png
+        pngquant origen.png --ext -pngquant.png
 
 Ejemplo: [tinypng.org][tinypng] (optimizador online que usa pngquant)
 
