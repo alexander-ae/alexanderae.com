@@ -15,10 +15,10 @@ Lo que sí haré, será enumerar algunos buenos artículos sobre la comparación
 * [Foundation vs Bootstrap:Round 1][3]: Otro punto de vista que concluye con el uso de **Foundation** para el caso de que gustemos tener un mayor control sobre la interfaz y **Bootstrap** para cuando deseemos tener un set de elementos gráficos predefinidos y no esperemos realizar grandes cambios a los mismos.
 * [UI Cage Match: Bootstrap 2.2.1 vs. Foundation 3.2][4]: Una última comparativa, muy reciente por cierto (22/12/2012). El autor realiza incluso una maqueta y la construye por medio de cada una de estas herramientas. Nos muestra las diferencias generales entre los elementos UI, complementos js y la cuadrícula.
 
-En mi caso, prefiero **Foundation** por el facil manejo que me da sobre la cuadrícula, por el que las clases me parecen más intuitivas y porque me da un mayor control sobre los estilos (*lo cual a mi parecer es excelente*).
+En mi caso, prefiero **Foundation** por el facil manejo que me da sobre la cuadrícula, porque las clases me parecen más intuitivas y me da un mayor control sobre los estilos (*lo cual a mi parecer es excelente*).
 
 Tal vez cuando desarrolle una mayor cantidad de sitios con Foundation pueda dar una más completa opinion, después de todo ambos frameworks son muy buenos y todo depende de nuestras necesidades, y como dicen:
-    
+
 > 'No hay herramienta mala, sino herramienta en malas manos'
 
 

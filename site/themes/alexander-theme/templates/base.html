@@ -15,7 +15,7 @@
     <link rel="author" href="/humans.txt" />
 
     {% block metadescripcion %}
-    <meta name='description' content="{{ META_DESCRIPTION}}">
+    <meta name='description' content="{{ META_DESCRIPTION }}">
     {% endblock metadescripcion %}
 
     {% if FEED_ALL_ATOM %}
@@ -28,8 +28,8 @@
 
     {% endblock head %}
 
-    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:700&text={{ SITENAME}}' rel='stylesheet' type='text/css'/>
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono&text=!#$%&*+,-.(){}[]\<>-/1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20'" rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:700&text={{ SITENAME}}' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono&text=!#$%&*+,-.(){}[]\<>-/1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%20'" rel='stylesheet' type='text/css'/>
 
     {% block css %}
     {% assets filters="less, cssmin", output="css/style.min.css", "css/pygments.css", "css/foundation.min.css" , "less/main.less" %}
@@ -44,7 +44,7 @@
         <h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1>
     </header>
     <!-- /#banner -->
-    
+
     <div id='content' class='columns fifteen centered'>
         <nav id="menu" class='row sixteen'>
             <div class="column">
@@ -58,7 +58,7 @@
                 <a href="mailto:{{ EMAIL }}"><img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABy0lEQVR4Xu2bzY7CMBCDpysesar6iAjxjt3DKlKEktrzA2Kn813rxB6T0nJgOY7jkAvzgwTZqQKQIDtVABJkpwpAguxUAUiQnSoACbJzm13Y9nWZXfuPPO7P4W+ey5+AKgAJslMFIEF2pk8Bhtk366fxPLFcJ8BjHIU3g6sAEX8ADxHerlug0YJ86paIGLzhPgE9kcFmRHuoCmA+4eiAPczeTMYeVQEinMG2rwsTloXdj8n2iroAkT8jxowJjWD2YPOMMBXQYEyZAWYwa5kMZ7gKEOECsEe4weoZb4S7ABE+CDMUoxHhPREhBYjw9+HZgMzwrA9LWAEaRoMyw7+DkDfBhmYIjbZn29flK0+AdSALkV4hBUQGYonydBeAgli/tJh1yJvBVQAK0A/ADDTSoTUoA8JcADKeBT8byLJGBGc5w1QAMkSBR9cta3pQphnqxyAyQkEbrK7ncX8e6EVKu6/qBEQN7wF5oIyvqAo4AwWLJNIrpIDIQCxRnu4CooJYiPB2FRARwIs3g7kAr3EkniymAjyG78KaSf0eIKJ/1HwzphOQiSoACbJTBSBBdpb6z9DFqQKQIDtVABJkpwpAguxUAUiQnSoACbLzC6Pj6W7v8o9wAAAAAElFTkSuQmCC" alt="mail" width="32" height="32" title='{{ EMAIL }}' class='social-email'></a>
             </div>
         </nav>
-        
+
         <!-- /#menu -->
 
         {% block content %}
@@ -72,7 +72,7 @@
                 {% endfor %}
                 <p class="license column">El contenido se publica bajo licencia{{' '}} <a href="http://creativecommons.org/licenses/by-sa/3.0/" target='_blank'>Creative Commons</a></p>
             </nav>
-                
+
             <div class='footer-line'></div>
         </footer>
     </div>

@@ -5,7 +5,7 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-SITEURL = 'http://alexanderae.com'
+SITEURL = 'https://alexanderae.com'
 
 OUTPUT_PATH = '/home/alcaudon/webapps/alexander_ae_site'
 DELETE_OUTPUT_DIRECTORY = True
