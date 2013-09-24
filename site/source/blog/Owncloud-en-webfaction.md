@@ -70,6 +70,22 @@ if(isset($_GET['Authorization']) && preg_match('/Basic\s+(.*)$/i', $_GET['Author
 
 Y con ello ya estaría todo listo!
 
+---
+
+*Actualización: 23/09/2013*
+
+Owncloud necesita ejecutar tareas de fondo periódicamente (como buscar nuevas noticias si se usa la aplicación *news*), para lo cual se cuenta con [3 opciones][background-jobs]: Ajax, webcron y cron.
+
+En mi caso, utilizo cron, el cual para usarse en webfaction necesita que editemos el archivo de cron con el comando **crontab -e**.
+
+Y añadiendo una entrada del tipo:
+
+        */20  *  *  *  * /usr/local/bin/php54 -f ~/webapps/owncloud/cron.php > $HOME/cron.log 2>&1
+
+con lo que ejecutaremos el cron.php cada 20 minutos y mantendremos un archivo log llamado cron.log.
+
+Nota: es posible que prefiramos usar algun otro editor al que se usa por defecto para manipular el archivo cron. Lo podemos cambiar ajustando la variable *EDITOR*, por ejemplo: **export EDITOR=nano**
+
 
 [^1]: Visto en los [foros de webfaction][setup-owncloud]
 [^2]: Matthias Blaicher publicó la solución en su [blog][blaicher.com].
@@ -77,3 +93,4 @@ Y con ello ya estaría todo listo!
 [chakra-linux]: http://www.chakra-project.org/
 [setup-owncloud]: http://community.webfaction.com/questions/13195/setup-owncloud
 [blaicher.com]: http://www.blaicher.com/2012/07/fixing-authentication-of-owncloud-for-webfaction/
+[background-jobs]: http://doc.owncloud.org/server/5.0/admin_manual/configuration/background_jobs.html
