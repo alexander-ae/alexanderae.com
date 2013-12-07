@@ -4,7 +4,7 @@ Tags: django, django-apps
 Slug: django-apps-uuslug
 Author: __alexander__
 
-Una de las características de **[django][django]** es el [diseño elegante][design-your-urls] de las urls, a diferencia de como otros frameworks o lenguajes pueden manejar este aspecto. Por ejemplo con asp o php podríamos tener[^1]:
+Una de las características de **[django][django]** es el [diseño elegante][design-your-urls] de las urls a diferencia de como otros frameworks o lenguajes puedan manejar este aspecto. Por ejemplo con asp o php podríamos tener[^1]:
 
     www.test.com/post.asp?u=142
 
@@ -16,7 +16,7 @@ Mientras que en *django* podríamos tener sin problema, urls amigables como:
 
 - - -
 
-Pero debemos considerar que utilizar id's en nuestras urls no es recomendable:
+Nota: debemos considerar que utilizar id's en nuestras urls no es recomendable:
 
 1. Hay quien opina que facilita ataques por inyección sql. Aunque en django tenemos ese punto cubierto al utilizar correctamente los [querysets][django-sql-injection].
 
@@ -34,7 +34,7 @@ un usuario tendería a escoger la segunda url por motivos que resultan obvios.
 
 Entonces después de esta no tan breve introducción.. ¿cómo realizamos esto con django?
 
-**Django** tiene en su módulo *utils* la herramienta [slugify][django-slugify] para generar slugs[^2] y en su módulo *models* el campo [SlugField][django-slugfield] para autogenerar este campo.
+**Django**, en su módulo *utils* dispone de la función [slugify][django-slugify] para generar slugs[^2] y en su módulo *models* tenemos a [SlugField][django-slugfield] para autogenerar un campo de este tipo.
 
 El problema aparece cuando por ejemplo generamos los campos *slug* en base a el título de una noticia, la cual para el ejemplo se titula: *Explosión* y pasado cierto tiempo aparece otra noticia llamada del mismo modo.
 
