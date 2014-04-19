@@ -32,7 +32,11 @@
 
 /* BASE */
 
-a{
+body {
+    min-width: 320px;
+}
+
+a {
     color: @azul_oscuro_02;
     text-decoration: none;
     &:hover, &.active{
@@ -40,16 +44,21 @@ a{
     }
 }
 
-abbr{
+abbr {
     border-bottom: 0;
 }
 
-em{
+address {
+    font-style: normal;
+}
+
+em {
     font-style: normal;
     color: @color_em;
 }
 
-strong, b{
+strong,
+b {
     color: darken(@color_em, 10%);
     font-weight: normal;
 }
@@ -59,12 +68,14 @@ sup {
     font-size: 12px;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
     margin: 5px 0 10px 0;
     color: @naranja_01;
 }
 
-p{
+p {
+    font-size: 16px;
+
     img{
         display: block;
         margin: 10px auto;
@@ -75,31 +86,37 @@ p{
     }
 }
 
-dt{
+dt {
     font-weight: bold;
     margin-top: 5px;
 }
 
-.l{
+ul,
+li,
+a {
+    font-size: 16px;
+}
+
+.l {
     float: left;
 }
 
-.r{
+.r {
     float: right;
 }
 
-.clear{
+.clear {
     clear: both;
 }
 
-.column{
+.column {
     margin: 5px 0;
 }
 
-.highlight{
+.highlight {
     background: #272822;
     font-family: 'Droid Sans Mono';
-    font-size: 15px;
+    font-size: 16px;
     margin: 15px;
     padding: 10px;
     max-height: 400px;
@@ -115,22 +132,22 @@ dt{
 }
 
 
-.footer-line{
+.footer-line {
     height: 4px;
     background: @verde_oscuro_01;
     color: @blanco;
 }
 
-.footnote{
+.footnote {
     margin-top: 32px;
-    font-size: 13px;
+    font-size: 14px;
 
-    ol{
+    ol {
         list-style: outside decimal;
         margin: 0 0 10px 25px;
     }
 
-    hr{
+    hr {
         padding: 0;
         border: none;
         border-top: 5px double @gris_02;
@@ -152,8 +169,8 @@ dt{
         font-weight: bold;
     }
 
-    p{
-        font-size: 13px;
+    p {
+        font-size: 14px;
     }
 }
 
@@ -185,105 +202,108 @@ dt{
 
 /* GENERAL */
 
-body{
+body {
     font-family: 'Droid Sans', sans-serif;
 }
 
-#banner{
+#banner {
     height: 120px;
     line-height: 120px;
     background-image: url('../images/background-header.jpg');
-    h1{
+    h1 {
         font-family: 'Cabin Sketch', bold;
-        font-size: 54px;
         font-weight: bold;
         margin: 0;
         padding: 0 1em;
         line-height: inherit;
-        a{
+        a {
             color: @blanco;
+            font-size: 54px;
         }
     }
 }
 
-#menu{
-    font-size: 16px;
+#menu {
+    font-size: 18px;
     margin: 12px 0;
-    a{
+    a {
         color: @azul_oscuro_01;
-        font-size: 16px;
-        &:hover, &.active{
+        font-size: 18px;
+        &:hover,
+        &.active {
             color: @naranja_01;
         }
     }
-    &>div{
+    &>div {
         height: 36px;
     }
-    .nav-a{
+    .nav-a {
         margin: 0 25px 5px 0;
         display: inline-block;
     }
-    .social a{
+    .social a {
         margin: 0 4px;
     }
 
     .social-email,
     .social-twitter,
-    .social-rss{
+    .social-rss {
         background: @gris_oscuro_02;
     }
 
-    .social-twitter:hover{
+    .social-twitter:hover {
         background: @celeste_01;
     }
 
-    .social-rss:hover{
+    .social-rss:hover {
         background: @naranja_01;
     }
 
-    .social-email:hover{
+    .social-email:hover {
         background: @verde_oscuro_02;
     }
 }
 
-#content{
+#content {
     max-width: 1024px;
-    .entry-title{
+    .entry-title {
         color: @naranja_01;
         font-weight: bold;
-        a{
+        a {
             color: @naranja_01;
+            font-size: 37px;
         }
     }
 }
 
-#footer{
+#footer {
     margin: 25px 0;
 }
 
-#footer-content{
-    font-size: 16px;
+#footer-content {
+    font-size: 18px;
     margin: 7px 0px;
     width: auto;
 
-    a{
+    a {
         color: @azul_oscuro_03;
-        &:hover, &.active{
+        &:hover,
+        &.active {
             color: @naranja_01;
         }
     }
 
-    .license{
-        font-size: 13px;
+    .license {
+        font-size: 16px;
         margin: 0;
         padding: 0;
     }
 }
 
-.paginator{
+.paginator {
     margin: 15px;
     text-align: center;
-    a{
+    a {
         width: 36px;
         height: 28px;
         background-color: @gris_oscuro_02;
@@ -292,43 +312,43 @@ body{
         margin: 0 6px 6px 0;
     }
 
-    .pag{
+    .pag {
         width: 16px;
         height: 16px;
         display: block;
-        margin: 4px 10px;
+        margin: 2px 10px;
         text-align: center;
     }
 
-    .active{
+    .active {
         background-color: @naranja_01;
     }
 }
 
-.search-box{
+.search-box {
     margin: 20px 40px;
 }
 
 /* BLOG */
 
-#blog-content{
+#blog-content {
     margin: 0 12px;
 }
 
-.entry{
+.entry {
     background: @gris_03;
     border: @gris_oscuro_03 solid 2px;
     margin: 10px 0 20px;
     min-height: 200px;
     position: relative;
-    font-size: 15px;
+    font-size: 16px;
     padding: 20px 0 20px 20px;
 
-    header{
+    header {
         margin-bottom: 10px;
     }
 
-    .entry-content{
+    .entry-content {
         h4{
             font-size: 18px;
         }
@@ -336,7 +356,7 @@ body{
     }
 
 
-    div.month{
+    div.month {
         width: 90px;
         height: 60px;
         background: @gris_oscuro_01;
@@ -350,41 +370,41 @@ body{
         }
     }
 
-    div.day{
+    div.day {
         width: 55px;
         height: 20px;
         background: @gris_oscuro_03;
         margin: 2px auto;
         padding: 4px;
         text-align: center;
-        span.day{
+        span.day {
             color: @blanco;
             font-size: 14px;
         }
     }
 
-    .tags a{
+    .tags a {
         color: @azul_oscuro_02;
-        &:hover{
+        &:hover {
             color: @azul_oscuro_03;
         }
     }
 }
 
-#article{
+#article {
     margin: 0 auto;
     max-width: 780px;
     font-size: 15px;
 
-    header{
+    header {
         margin: 0 0 8px;
     }
 
-    footer{
-        .published{
+    footer {
+        .published {
             font-size: 14px;
         }
-        .author{
+        .author {
             font-size: 14px;
         }
     }
@@ -516,7 +536,33 @@ body{
 
 /* Small devices */
 @media only screen and (max-width: 480px) {
-  h2{
-      font-size: 28px;
-  }
+
+    #blog-content {
+        margin: 0;
+    }
+
+    #menu .social {
+        margin-top: 15px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 20px 0 15px 0;
+    }
+
+    #content .entry-title a {
+        font-size: 30px;
+    }
+
+    #article .article-title {
+        font-size: 30px;
+    }
+
+    .entry {
+        padding: 20px 0 20px 10px;
+    }
 }

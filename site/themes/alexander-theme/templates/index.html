@@ -3,13 +3,13 @@
 
 {% block mainClass %} - home{% endblock mainClass %}
 
-{% block content %}        
+{% block content %}
 <section id="blog-content">
 
 {% block content_title %}
 {% endblock %}
 
-{% for article in articles_page.object_list %}        
+{% for article in articles_page.object_list %}
     <article class="entry columns sixteen">
         <div class="column thirteen">
             <header>
@@ -25,7 +25,7 @@
                 <div class="clear"></div>
             </footer>
         </div>
-        <div class="date column three" data-date='{{ article.locale_date }}'>
+        <div class="date column three hide-for-small" data-date='{{ article.locale_date }}'>
             <div class="month">
                 <span class="month">{{ article.locale_date.split()[1] }}</span>
                 <div class="day">
