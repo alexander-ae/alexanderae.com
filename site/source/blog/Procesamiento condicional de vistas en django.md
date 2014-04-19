@@ -8,7 +8,7 @@ Author: __alexander__
 
 Y siendo aún más pesimistas (o tal vez realistas), ¿qué pasa si varios clientes realizan la misma acción una y otra vez posiblemente para ser los primeros en leer una noticia?
 
-Sucedería sería que nuestro servidor enviaría una y otra vez el mismo contenido, consumiendo ancho de banda, sin importar que nuestra página no tenga contenido nuevo o actualizado.
+Sucedería que nuestro servidor enviaría una y otra vez el mismo contenido, consumiendo ancho de banda, sin importar que nuestra página no tenga contenido nuevo o actualizado.
 
 <br>
 
