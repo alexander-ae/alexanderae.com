@@ -221,6 +221,11 @@ Para leer a detalle sobre la implementación de un servidor GCM con django, se p
 
 Pueden consultar el código del proyecto de prueba que realicé en un repositorio en [bitbucket][repo-server].
 
+<br/>
+
+*Nota:* Este proyecto tiene como finalidad el mostrar cómo escribir un servidor para GCM desde cero, pero para fines más serios, es posible que se desee utilizar algún proyecto como: [django-gcm][django_gcm].
+
+<br/>
 
 [^1]: También es posible recibir información desde el dispositivo mediante la misma conexión, pero para este ejemplo solo enviaré la información en un sentido.
 [^2]: Note que en un entorno de producción, las variables de configuración *no deben de mostrarse en el archivo settings*, sino que debemos utilizar variables de entorno o algún otro método.
@@ -230,3 +235,4 @@ Pueden consultar el código del proyecto de prueba que realicé en un repositori
 [gcm_parametros]: http://developer.android.com/google/gcm/server.html#params
 [gcm_server_docs]: http://developer.android.com/google/gcm/server.html
 [repo-server]: https://bitbucket.org/__alexander__/demo-django-gcm-server
+[django_gcm]: https://github.com/bogdal/django-gcm

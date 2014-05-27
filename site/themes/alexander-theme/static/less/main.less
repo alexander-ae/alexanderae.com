@@ -28,7 +28,7 @@
 
 @color_em: @naranja_01;
 
-@codehiliteBack: #383931;
+@codehiliteBack: #222;
 
 /* BASE */
 
@@ -114,14 +114,14 @@ a {
 }
 
 .highlight {
-    background: #272822;
+    background: @codehiliteBack;
     font-family: 'Droid Sans Mono';
     font-size: 16px;
     margin: 15px;
     padding: 10px;
     max-height: 400px;
     overflow: auto;
-    background: @codehiliteBack;
+
     span {
         line-height: 150%;
     }
@@ -172,6 +172,28 @@ a {
     p {
         font-size: 14px;
     }
+}
+
+/* Fix tags */
+#tags-content #cloud .tag-0 a{
+  font-size: 56px;
+  line-height: 0.5;
+}
+#tags-content #cloud .tag-1 a{
+  font-size: 42px;
+  line-height: 1;
+}
+#tags-content #cloud .tag-2 a{
+  font-size: 28px;
+  line-height: 1.5;
+}
+#tags-content #cloud .tag-3 a{
+  font-size: 21px;
+  line-height: 2;
+}
+#tags-content #cloud .tag-4 a{
+  font-size: 14px;
+  line-height: 3;
 }
 
 /* scrollbar */
@@ -271,7 +293,7 @@ body {
         font-weight: bold;
         a {
             color: @naranja_01;
-            font-size: 37px;
+            font-size: 32px;
         }
     }
 }

@@ -26,7 +26,7 @@ DEFAULT_PAGINATION = 4
 DEFAULT_CATEGORY = "Sin categoría"
 MARKUP = ('md',)
 RELATIVE_URLS = False
-SUMMARY_MAX_LENGTH = 72
+SUMMARY_MAX_LENGTH = 80
 
 # Links
 MENUITEMS = (('Blog', '/'),
@@ -56,9 +56,9 @@ STATIC_PATHS = ['pictures']
 SITEMAP = {
     'format': 'xml',
     'priorities': {
-        'articles': 0.7,
+        'articles': 0.8,
         'indexes': 0.7,
-        'pages': 0.5
+        'pages': 0.6
     },
     'changefreqs': {
         'articles': 'daily',
