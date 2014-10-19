@@ -38,19 +38,9 @@ external/.~*
 # media
 www/media/*
 site/output/*
-
-# Eclipse
-.project
-.pydevproject
-
-# base de datos
-*.sqlite
-*.sqlite3
-*.db
-data/*
+site/cache/*
 
 # otros
-.coverage
 *.directory
 *.pid
 site/themes/alexander-theme/static/less/main.css
