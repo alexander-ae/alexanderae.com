@@ -4,7 +4,7 @@ Tags: django, optimizacion
 Slug: django-procesamiento-condicional-de-vistas
 Author: __alexander__
 
-¿Qué pasá cuando por algún extraño motivo un cliente, en su afán por estar siempre al día, comienza a presionar la tecla de actualizar el navegador repetidas veces ?
+¿Qué pasá cuando un cliente en su afán por estar siempre al día, comienza a presionar la tecla de actualizar el navegador repetidas veces ?
 
 Y siendo aún más pesimistas (o tal vez realistas), ¿qué pasa si varios clientes realizan la misma acción una y otra vez posiblemente para ser los primeros en leer una noticia?
 

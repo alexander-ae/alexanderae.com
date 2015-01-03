@@ -4,8 +4,10 @@
 from __future__ import unicode_literals
 
 AUTHOR = u"__alexander__"
-SITENAME = u"Alexander A. E. - log"
+SITENAME = u"Alexander A. E."
 SITEURL = 'http://127.0.0.1:8000'
+
+PATH = 'source'
 
 # Feed
 FEED_DOMAIN = SITEURL
@@ -20,9 +22,9 @@ TAG_FEED_RSS = 'feeds/%s.rss.xml'
 TIMEZONE = 'America/Lima'
 DEFAULT_LANG = 'es'
 DEFAULT_DATE_FORMAT = '%d %b %Y'
-LOCALE = ('es_ES',)
+# LOCALE = ('es_ES',)
 
-DEFAULT_PAGINATION = 4
+DEFAULT_PAGINATION = 5
 DEFAULT_CATEGORY = "Sin categoría"
 MARKUP = ('md',)
 RELATIVE_URLS = False
@@ -40,8 +42,8 @@ FOOTER_LINKS = (('Blog', '/'),
                ('Sobre mi', '/pages/about-me.html'),
                 )
 
-PLUGIN_PATH = '/home/alexander/Proyectos/pelican-plugins'
-PLUGINS = ['assets', 'sitemap', 'gzip_cache', 'optimize_images']
+PLUGIN_PATHS = ['/home/alexander/Proyectos/pelican-plugins']
+PLUGINS = ['assets', 'sitemap']
 JINJA_EXTENSIONS = ['jinja2.ext.do', 'jinja2htmlcompress.HTMLCompress']
 
 SHOW_AUTHOR = True
@@ -50,7 +52,7 @@ META_DESCRIPTION = '''Sitio personal de __alexander__: Encontraras
     publicaciones sobre algunas de mis afficciones como linux, la programacion
     en python, desarrollo web en general entre otros'''
 
-THEME = 'themes/alexander-theme'
+THEME = 'themes/skeleton-theme'
 STATIC_PATHS = ['pictures']
 
 SITEMAP = {
@@ -75,6 +77,9 @@ GOOGLE_ANALYTICS_ID = ''
 GOOGLE_SITE_VERIFICATION = ''
 
 # Extra
-FILES_TO_COPY = (('extra/humans.txt', 'humans.txt'),
-                 ('extra/favicon.png', 'favicon.png'),
-                 )
+STATIC_PATHS = [
+    'extra/humans.txt',
+    'extra/favicon.png',
+    ]
+
+DEBUG = True

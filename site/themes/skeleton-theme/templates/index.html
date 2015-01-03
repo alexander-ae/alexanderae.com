@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+
+{% block bodyClass %}home{% endblock bodyClass %}
+
+{% block content %}
+<section id="blog-content">
+    <h1>Blog</h1>
+    {% for article in articles_page.object_list %}
+        <article class="entry row">
+            <div class="columns ten">
+
+                <h2 class="entry-title">
+                    <a class='entry-title-a' href="{{ article.url }}" rel="bookmark" title="Permalink a{{ " " }}{{ article.title}}">{{ article.title }}</a>
+                </h2>
+
+                <div class="entry-content">{{ article.summary }}</div>
+
+                <div class="entry-footer">
+                    {% include "tagslist.html" %}
+                    <div class="r"><a href="{{ SITEURL }}/{{ article.url }}">Ver más</a></div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="date columns two" data-date='{{ article.locale_date }}'>
+                <div class="month">
+                    <span class="month">{{ article.locale_date.split()[1] }}</span>
+                    <div class="day">
+                        {{ article.locale_date.split()[0] }}
+                    </div>
+                </div>
+            </div>
+        </article>
+    {% endfor %}
+    <!-- posts-list -->
+
+    {% include 'pagination.html' %}
+</section><!-- /#blog-content -->
+{% endblock content %}
