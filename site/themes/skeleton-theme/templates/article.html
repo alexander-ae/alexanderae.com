@@ -2,6 +2,8 @@
 
 {% block schema %}itemtype="http://schema.org/Article"{% endblock schema %}
 
+{% block title %}{{ article.title }}{% endblock %}
+
 {% block metadescripcion %}
     <meta name='description' content="{{ article.summary|striptags }}">
 {% endblock metadescripcion %}

@@ -3,7 +3,7 @@ Date: 2014-10-19
 Tags: django, js
 Slug: dropzonejs-django
 Author: __alexander__
-Summary: DropzoneJS es una libreria opensource que permite subir archivos mediante la acción "arrastrar y soltar" con la capacidad de mostrar vistas previas de las imágenes. Y django.. bueno, ya sabemos qué es django.
+Summary: DropzoneJS es una libreria opensource que permite subir archivos mediante la acción 'arrastrar y soltar' con la capacidad de mostrar vistas previas de las imágenes. Y django.. bueno, ya sabemos qué es django.
 
 
 > [DropzoneJS][DropzoneJS] es una libreria opensource que permite subir archivos mediante la acción "arrastrar y soltar" con la capacidad de mostrar vistas previas de las imágenes.

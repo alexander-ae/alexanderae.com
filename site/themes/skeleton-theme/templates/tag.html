@@ -26,12 +26,12 @@
 
                     <div class="entry-footer">
                         {% include "tagslist.html" %}
-                        <div class="r"><a href="{{ SITEURL }}/{{ article.url }}">Ver más</a></div>
+                        <div class="ver-mas"><a href="{{ SITEURL }}/{{ article.url }}">Ver más</a></div>
                         <div class="clear"></div>
                     </div>
                 </div>
 
-                <div class="date columns two" data-date='{{ article.locale_date }}'>
+                <div class="date columns two hide-for-tablet" data-date='{{ article.locale_date }}'>
                     <div class="month">
                         <span class="month">{{ article.locale_date.split()[1] }}</span>
                         <div class="day">

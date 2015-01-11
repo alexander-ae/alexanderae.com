@@ -26,7 +26,7 @@
     {% endif %}
 
     <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:700&amp;text=AlexanderAE.-' rel='stylesheet' type='text/css'/>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono&amp;text=!#$%&amp;*+,-.(){}[]\<>-/1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'" rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700&amp;text=!#$%&amp;*+,-.(){}[]\<>-/1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'" rel='stylesheet' type='text/css'/>
 
     {% block css %}
     {% assets filters="cssmin", output="css/style.min.css", "css/normalize.css", "css/pygments.css", "css/skeleton.css" , "css/main.css" %}
@@ -44,13 +44,13 @@
 
     <div class='container'>
         <nav id="menu" class='row'>
-            <div class="six columns">
+            <div class="l">
             {% for title, link in MENUITEMS %}
                 <a href="{{ link }}" class="nav-a">{{ title }}</a>
             {% endfor %}
             </div>
 
-            <div class="social right">
+            <div class="social">
                 <a href="/{{ FEED_ALL_RSS }}" class='social-a' target='_blank' title='Feed RSS'><img src="/theme/images/rss_.png" alt="rss" width="32" height="32" class='social-rss'></a>
 
                 <a href='https://twitter.com/{{ TWITTER_USERNAME }}' class='social-a' target='_blank' title='{{ TWITTER_USERNAME }}'><img src="/theme/images/twitter_.png" alt="twitter" width="32" height="32" class='social-twitter'></a>
