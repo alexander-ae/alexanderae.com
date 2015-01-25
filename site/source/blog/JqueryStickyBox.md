@@ -60,4 +60,4 @@ Código en bitbucket de la demo que realizé: [demo][repo-demo] (el directorio e
 [repo-plugin]: https://github.com/p-m-p/jQuery-Stickybox
 [repo-demo]: https://bitbucket.org/__alexander__/alexander-ae-site-static-demos
 
-[demo-img]: /static/pictures/sticky-sidebar-jquery-plugin.png 'Captura de pantalla'
+[demo-img]: /pictures/sticky-sidebar-jquery-plugin.png 'Captura de pantalla'

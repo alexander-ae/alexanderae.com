@@ -201,4 +201,4 @@ El código anterior, se encuentra comentado, indicando los pasos realizados; com
 [docs]: http://docs.sqlalchemy.org/en/rel_0_8/
 [dzone]: http://python.dzone.com/articles/simple-sqlalchemy-07-08
 
-[modelo-libros]: /static/pictures/sqlalchemy-modelo-libros.png 'Modelo de datos'
+[modelo-libros]: /pictures/sqlalchemy-modelo-libros.png 'Modelo de datos'

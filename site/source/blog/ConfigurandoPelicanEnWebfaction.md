@@ -42,6 +42,6 @@ Ahora lo que sigue, al menos para mí, será el aprender a usar [fabric][fabric]
 
 [pelican]: http://docs.getpelican.com/en/latest/ 'pelican static site generator'
 
-[webfaction-static-image]: /static/pictures/webfaction-new-app-static.png 'webfaction new static app'
+[webfaction-static-image]: /pictures/webfaction-new-app-static.png 'webfaction new static app'
 
 [fabric]: http://docs.fabfile.org/en/1.5/

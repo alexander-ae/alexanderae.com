@@ -222,6 +222,6 @@ Para mayor información se puede visitar la [documentación][docs] del plugin. D
 [sandbox]: http://calebevans.me/projects/jcanvas/sandbox/
 [github]: https://github.com/caleb531/jcanvas
 
-[demo-01]: /static/pictures/jcanvas-01.png 'Jcanvas - demo 01'
-[demo-02]: /static/pictures/jcanvas-02.png 'Jcanvas - demo 02'
-[demo-03]: /static/pictures/jcanvas-03.png 'Jcanvas - demo 03'
+[demo-01]: /pictures/jcanvas-01.png 'Jcanvas - demo 01'
+[demo-02]: /pictures/jcanvas-02.png 'Jcanvas - demo 02'
+[demo-03]: /pictures/jcanvas-03.png 'Jcanvas - demo 03'

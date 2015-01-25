@@ -55,7 +55,7 @@ Y también quien sugería una [mejora][calculo-iterativo] introduciendo los valo
 function getNumericStyleProperty(style, prop){
   return parseInt(style.getPropertyValue(prop),10) ;
 }
-  
+
 function element_position(e) {
     var x = 0, y = 0;
     var inner = true ;
@@ -142,5 +142,5 @@ Código en bitbucket del ejemplo: [demo][repo-demo] (el directorio es: posicion-
 [repo-demo]: https://bitbucket.org/__alexander__/alexander-ae-site-static-demos
 [demo]: http://labs.alexanderae.com/posicion-relativa-de-un-click/
 
-[demo-img]: /static/pictures/posicion-de-un-click-demo.png 'Demo'
-[demo-img-firefox]: /static/pictures/posicion-de-un-click-demo-firefox.png 'Consola en firefox'
+[demo-img]: /pictures/posicion-de-un-click-demo.png 'Demo'
+[demo-img-firefox]: /pictures/posicion-de-un-click-demo-firefox.png 'Consola en firefox'

@@ -47,11 +47,11 @@ En la documentación de south podemos encontrar un [tutorial][south-tutorial] mu
 ##### Un nuevo proyecto en django con south
 
 Por ejemplo, supongamos que estamos desarrollando un nuevo proyecto al que llamaremos ingeniosamente southTest con la aplicación testapp, la cual está enfocada a la administración de libros de una biblioteca.
-    
+
 Uno de los modelos de nuestra aplicación es el modelo libro, que contiene el título y el autor ambos como campos de texto.
 
 - Lo primero a realizar es crear la primera migración de nuestra aplicación, lo cual podemos realizar con el comando
-        
+
         ./manage.py schemamigration testapp --initial
 
 - Con esto se debe de haber creado un directorio en nuestra aplicación conteniendo la migración inicial, tal y como se muestra en la siguiente imagen:
@@ -99,7 +99,7 @@ Con esto doy por terminado[^repo] este exageradamente pequeño tutorial, que lo 
 [south-tutorial]: http://south.readthedocs.org/en/latest/tutorial/index.html#tutorial
 [repo]: https://bitbucket.org/__alexander__/test-django-south
 
-[proyecto-estructura-01]: /static/pictures/django-south-02.png 'Estructura del proyecto'
-[proyecto-syncdb-01]: /static/pictures/django-south-03.png 'syncdb'
-[admin-libro-01]: /static/pictures/django-south-01.png 'admin: libro'
-[proyecto-models]: /static/pictures/django-south-04.png 'models.py'
+[proyecto-estructura-01]: /pictures/django-south-02.png 'Estructura del proyecto'
+[proyecto-syncdb-01]: /pictures/django-south-03.png 'syncdb'
+[admin-libro-01]: /pictures/django-south-01.png 'admin: libro'
+[proyecto-models]: /pictures/django-south-04.png 'models.py'

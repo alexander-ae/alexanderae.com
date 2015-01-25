@@ -53,7 +53,6 @@ META_DESCRIPTION = '''Sitio personal de __alexander__: Encontraras
     en python, desarrollo web en general entre otros'''
 
 THEME = 'themes/skeleton-theme'
-STATIC_PATHS = ['pictures']
 
 SITEMAP = {
     'format': 'xml',
@@ -80,6 +79,7 @@ GOOGLE_SITE_VERIFICATION = ''
 STATIC_PATHS = [
     'extra/humans.txt',
     'extra/favicon.png',
+    'pictures',
     ]
 
 DEBUG = True

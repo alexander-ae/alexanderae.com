@@ -105,5 +105,5 @@ Como siempre, para mayor información, nada como la [documentación oficial][doc
 [last-modified]: http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.29
 [docs]: https://docs.djangoproject.com/en/1.6/topics/conditional-view-processing/
 
-[request-1]: /static/pictures/django-conditional-1.png 'Request 01'
-[request-2]: /static/pictures/django-conditional-2.png 'Request 02'
+[request-1]: /pictures/django-conditional-1.png 'Request 01'
+[request-2]: /pictures/django-conditional-2.png 'Request 02'

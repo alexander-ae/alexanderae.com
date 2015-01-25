@@ -119,7 +119,7 @@ También, mientras revisaba el código de pyfpdf decidí realizar algunas anotac
 
 [^1]: Mantenida por Mariano Reingart
 
-[demo-img]: /static/pictures/boleta.png
+[demo-img]: /pictures/boleta.png
 
 [FPDF]: http://www.fpdf.org/
 [pyfpdf]: https://code.google.com/p/pyfpdf/
