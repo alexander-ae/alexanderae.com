@@ -10,7 +10,7 @@ Iniciaré con [south][south], una aplicación que nos permite realizar migracion
 
 #### ¿Qué es una migración?
 
-Se refiere al cambio del esquema de la base de datos de una versión a otra. Por ejemplos:
+Se refiere al cambio del esquema de la base de datos de una versión a otra. Por ejemplo:
 
 - El añadir un nuevo modelo(tabla) a nuestra aplicación.
 - El añadir o remover un campo de nuestro modelo.
