@@ -1,7 +1,0 @@
-{% if article.tags %}
-<p class="tags l">Etiquetado como: {{ ' ' }} 
-    {% for tag in article.tags[:-1] %}
-    <a href="{{ SITEURL }}/tag/{{ tag|replace(" ", "%20") }}.html">{{ tag }}</a>, {{ ' ' }} {% endfor %}
-    <a href="{{ SITEURL }}/tag/{{ article.tags[-1:][0]|replace(" ", "%20") }}.html">{{ article.tags[-1:][0] }}</a>.
-</p>
-{% endif %}
