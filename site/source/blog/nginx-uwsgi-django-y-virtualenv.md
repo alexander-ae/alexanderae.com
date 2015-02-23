@@ -1,6 +1,6 @@
 Title: nginx, uwsgi, django y virtualenv
 Date: 2013-09-28 10:14
-Tags: nginx, django, webfaction, uwsgi
+Tags: nginx, django, webfaction, uwsgi,
 Slug: nginx-uwsgi-django-y-virtualenv
 Author: __alexander__
 

@@ -1,6 +1,6 @@
 Title: Jcanvas
 Date: 2013-05-02 09:10
-Tags: front-end, html, js, jquery, canvas
+Tags: front-end, html, js, jquery, canvas,
 Slug: jcanvas
 Author: __alexander__
 

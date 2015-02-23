@@ -1,6 +1,6 @@
 Title: Programar backup de Mysql en Windows
 Date: 2013-04-14 14:45
-Tags: mysql, sysadmin, windows 
+Tags: mysql, sysadmin, windows,
 Slug: programar-backup-de-mysql-en-windows
 Author: __alexander__
 

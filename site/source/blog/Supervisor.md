@@ -1,6 +1,6 @@
 Title: Supervisor
 Date: 2013-05-28
-Tags: sysadmin, linux
+Tags: sysadmin, linux,
 Slug: supervisor
 Author: __alexander__
 
@@ -50,7 +50,7 @@ El archivo de configuración luce similar a:
 y, para cada aplicación a controlar debemos añadir una sección *[program:program-name]*, como por ejemplo:
 
         [program:mongodb]
-        directory=/home/username/apps/mongodb-linux-x86_64-2.2.3 
+        directory=/home/username/apps/mongodb-linux-x86_64-2.2.3
         command=/usr/bin/mongod --dbpath /home/username/apps/mongodb-linux-x86_64-2.2.3/data --logpath /home/username/apps/mongodb-linux-x86_64-2.2.3/log/mongodb.log --config /etc/mongodb.conf --logappend --auth
         autorestart=true
 
@@ -86,7 +86,7 @@ Con lo cual ya tenemos varios excelentes motivos por los que usar esta herramien
 Algunos buenos artículos sobre supervisor que encontré son:
 
 - [How to install and configure Supervisord][articulo-1]: Instalación y configuración básica
-- [Managing site processes with Supervisord][articulo-2]: 
+- [Managing site processes with Supervisord][articulo-2]:
 - [Daemon Showdown: Upstart vs. Runit vs. Systemd vs. Circus vs. God][articulo-3]: comparativa con otros gestores de procesos
 
 Y no puede faltar, la documentación del proyecto: [docs][supervisor]

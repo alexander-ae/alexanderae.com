@@ -1,6 +1,6 @@
 Title: Servidor en django para Google Cloud Messaging para Android (II)
 Date: 2014-05-27
-Tags: django, android, google-cloud-messaging
+Tags: django, android, google-cloud-messaging,
 Slug: django-android-google-cloud-messaging-server-2
 Author: __alexander__
 

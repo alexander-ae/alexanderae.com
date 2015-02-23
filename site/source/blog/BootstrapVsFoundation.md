@@ -1,6 +1,6 @@
 Title: Twitter Bootstrap vs Foundation 3
 Date: 2013-01-01 11:47
-Tags: front-end, css
+Tags: front-end, css,
 Slug: bootstrap-vs-foundation
 Author: __alexander__
 

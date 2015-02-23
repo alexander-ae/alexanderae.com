@@ -1,6 +1,6 @@
 Title: Awesome Django
 Date: 2015-01-24
-Tags: django,django-apps,python
+Tags: django,django-apps,python,
 Slug: awesome-django-apps
 Author: __alexander__
 

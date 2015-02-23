@@ -1,6 +1,6 @@
 Title: Jquery StickyBox
 Date: 2013-02-17
-Tags: jquery, js
+Tags: jquery, js,
 Slug: jquery-stickybox
 Author: __alexander__
 

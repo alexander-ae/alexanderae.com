@@ -1,6 +1,6 @@
 Title: hghooks
 Date: 2013-05-19 19:00
-Tags: python, mercurial
+Tags: python, mercurial,
 Slug: hghooks
 Author: __alexander__
 

@@ -1,6 +1,6 @@
 Title: Acceso SSH sin password
 Date: 2013-03-24 12:00
-Tags: linux, sysadmin
+Tags: linux, sysadmin,
 Slug: acceso-ssh-sin-password
 Author: __alexander__
 
@@ -18,10 +18,10 @@ Lo que se desea es poder acceder desde la pc A hacia B con el usuario b. Para lo
 
         a@A:~> ssh-keygen -t rsa
         Generating public/private rsa key pair.
-        Enter file in which to save the key (/home/a/.ssh/id_rsa): 
+        Enter file in which to save the key (/home/a/.ssh/id_rsa):
         Created directory '/home/a/.ssh'.
-        Enter passphrase (empty for no passphrase): 
-        Enter same passphrase again: 
+        Enter passphrase (empty for no passphrase):
+        Enter same passphrase again:
         Your identification has been saved in /home/a/.ssh/id_rsa.
         Your public key has been saved in /home/a/.ssh/id_rsa.pub.
         The key fingerprint is:
@@ -31,17 +31,17 @@ Lo que se desea es poder acceder desde la pc A hacia B con el usuario b. Para lo
 2. Creamos el directorio *~/.ssh* en *B*, considerando que puede ya existir:
 
         a@A:~> ssh b@B mkdir -p .ssh
-        b@B's password: 
+        b@B's password:
 
 3. Añadimos nuestra llave pública creada en *A* al archivo *ssh/authorized_keys* en *B*:
 
         a@A:~> cat .ssh/id_rsa.pub | ssh b@B 'cat >> .ssh/authorized_keys'
-        b@B's password: 
+        b@B's password:
 
 ##### Nota:
 
 Es posible que necesitemos ajustar los permisos del directorio *.ssh* y el archivo *.ssh/authorized_keys*.
-    
+
     chmod 700 ~/.ssh
     chmod 600 ~/.ssh/authorized_key
 

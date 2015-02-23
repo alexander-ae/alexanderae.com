@@ -1,6 +1,6 @@
 Title: Hola Mundo ..
 Date: 2012-12-24
-Tags: informativo
+Tags: informativo,
 Slug: hola-mundo
 Author: __alexander__
 

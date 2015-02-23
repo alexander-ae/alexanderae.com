@@ -1,6 +1,6 @@
 Title: PyFPDF
 Date: 2013-11-03
-Tags: python
+Tags: python,
 Slug: pyfpdf-un-generador-de-archivos-pdf-en-python
 Author: __alexander__
 

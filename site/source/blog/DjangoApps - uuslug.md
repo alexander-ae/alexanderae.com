@@ -1,6 +1,6 @@
 Title: Django Apps: uuslug
 Date: 2013-06-23 23:00
-Tags: django, django-apps
+Tags: django, django-apps,
 Slug: django-apps-uuslug
 Author: __alexander__
 

@@ -1,6 +1,6 @@
 Title: Limpiar o resetear formularios en JS
 Date: 2013-02-28
-Tags: js
+Tags: js,
 Slug: clear-reset-form-js
 Author: __alexander__
 
@@ -22,12 +22,12 @@ Para limpiar formularios en cambio, tenemos que escribir nuestra propia función
 ::javascript
 function clearForm(oForm) {
 
-  var elements = oForm.elements; 
+  var elements = oForm.elements;
 
   oForm.reset();
 
   for(i=0; i<elements.length; i++) {
-      
+
     field_type = elements[i].type.toLowerCase();
 
     switch(field_type) {
@@ -36,7 +36,7 @@ function clearForm(oForm) {
       case "password":
       case "textarea":
       case "hidden":
-        elements[i].value = ""; 
+        elements[i].value = "";
         break;
 
       case "radio":

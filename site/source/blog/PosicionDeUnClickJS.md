@@ -1,6 +1,6 @@
 Title: Posición absoluta y Relativa de un click en javascript
 Date: 2013-02-24
-Tags: jquery, js
+Tags: jquery, js,
 Slug: posicion-de-click-en-js
 Author: __alexander__
 

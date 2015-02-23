@@ -1,6 +1,6 @@
 Title: PEP 8 - Guía de Estilo para Python
 Date: 2013-03-03 17:56
-Tags: python, desarrollo-de-software
+Tags: python, desarrollo-de-software,
 Slug: pep8-guia-de-estilo-para-python
 Author: __alexander__
 
@@ -77,7 +77,7 @@ podríamos hacer uso de los paréntesis:
 ~~~~
 ::python
 def __init__(self, first, second, third, fourth, fifth, sixth):
-    output = (first + second + third + fourth 
+    output = (first + second + third + fourth
         + fifth + sixth)
 ~~~~
 

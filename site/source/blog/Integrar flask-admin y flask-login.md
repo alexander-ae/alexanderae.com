@@ -1,6 +1,6 @@
 Title: Integrar flask-admin y flask-login
 Date: 2013-05-19 15:00
-Tags: python, flask
+Tags: python, flask,
 Slug: integrar-flask-admin-y-flask-login
 Author: __alexander__
 

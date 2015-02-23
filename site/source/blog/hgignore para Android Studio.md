@@ -1,6 +1,6 @@
 Title: Archivo .hgignore para Android Studio
 Date: 2014-05-29
-Tags: android, mercurial
+Tags: android, mercurial,
 Slug: hgignore-para-android-studio
 Author: __alexander__
 Summary: Ya que no es buen hábito incluir archivos autogenerados en un proyecto, y necesitaba una lista de archivos a ignorar para usar conjuntamente con el Android Studio, encontré el siguiente archivo..

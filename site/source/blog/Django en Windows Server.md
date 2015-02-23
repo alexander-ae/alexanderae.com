@@ -1,6 +1,6 @@
 Title: Django, MySQL y Apache en Windows Server
 Date: 2013-04-11
-Tags: django, windows-server
+Tags: django, windows-server,
 Slug: django-mysql-apache-en-windows-server
 Author: __alexander__
 
@@ -22,7 +22,7 @@ Al escribir python y presionar enter, se debe de mostrar la consola interactiva 
 Al escribir easy_install se nos debe de comunicar que nos faltó indicar la url o ruta del archivo a instalar.
 
 *4.* Instalamos [pip][pip] (otro gestor de paquetes de python) mediante:
-    
+
     easy_install pip
 
 *5.* Instalamos django y las dependencias de nuestro proyecto por medio de pip, por ejemplo:
@@ -30,9 +30,9 @@ Al escribir easy_install se nos debe de comunicar que nos faltó indicar la url 
     pip install "django<=1.4.99"
     pip install "django-uuslug"
 
-*6.* En caso de requerir [PIL][PIL] (Python Imaging Library) en nuestro proyecto, se recomienda utilizar [Pillow][pillow] (un fork de PIL mucho más amigable que su antecesor) como reemplazo. Puede descargar el instalador para windows desde [pypi][pypi-pillow] 
+*6.* En caso de requerir [PIL][PIL] (Python Imaging Library) en nuestro proyecto, se recomienda utilizar [Pillow][pillow] (un fork de PIL mucho más amigable que su antecesor) como reemplazo. Puede descargar el instalador para windows desde [pypi][pypi-pillow]
 
-- - - 
+- - -
 
 
 *7.* Descargamos e instalamos [WAMP Server][wamp]. Note que se requiere como dependencia a [Microsoft Visual C++ 2010 Redistributable][visual-2010] (observe que puede descargar la versión x86 o la de 64 bits). Una vez instalado wamp, podemos cargar nuestra base de datos por medio de *phpMyAdmin*
@@ -60,12 +60,12 @@ recolectamos los archivos static:
 
 *12.* Configuramos el archivo wsgi para que quede similar a:
 
-    import os, sys  
-      
+    import os, sys
+
     sys.path = ['C:\proyecto\www', 'C:\Python27\Lib\site-packages'] + sys.path
-      
+
     os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
-      
+
     import django.core.handlers.wsgi
 
     application = django.core.handlers.wsgi.WSGIHandler()

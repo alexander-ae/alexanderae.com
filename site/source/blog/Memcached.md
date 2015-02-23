@@ -1,6 +1,6 @@
 Title: Memcached
 Date: 2013-03-19 22:03
-Tags: memcached, optimizacion
+Tags: memcached, optimizacion,
 Slug: memcached
 Author: __alexander__
 
@@ -38,7 +38,7 @@ o compilándolo:
     tar xfz memcached-1.4.x.tar.gz
     cd memcached-1.4.x/
     ./configure
-    make && make install 
+    make && make install
 ~~~~
 
 podemos comprobar la ruta del comando mediante:
@@ -112,12 +112,12 @@ Como adicional, el archivo de configuración y scripts necesarios para administr
     [Unit]
     Description=memcached daemon
     After=network.target
-     
+
     [Service]
     EnvironmentFile=/etc/sysconfig/memcached.config
     ExecStart=/usr/local/bin/memcached -p ${PORT} -u ${USER} -m ${CACHESIZE} -c ${MAXCONN} -P ${PID} $OPTIONS
     ExecStop=/bin/kill -9 'cat ${PID}'; /bin/rm ${PID}
-     
+
     [Install]
     WantedBy=multi-user.target
 ~~~

@@ -1,6 +1,6 @@
 Title: Python: match vs findall vs search
 Date: 2014-01-26
-Tags: python, regexp
+Tags: python, regexp,
 Slug: python-match-vs-findall-vs-search
 Author: __alexander__
 

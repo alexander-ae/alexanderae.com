@@ -1,6 +1,6 @@
 Title: Django Apps: admin_honeypot
 Date: 2013-01-27 22:50
-Tags: django, django-apps, seguridad
+Tags: django, django-apps, seguridad,
 Slug: django-apps-admin_honeypot
 Author: __alexander__
 

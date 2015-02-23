@@ -1,6 +1,6 @@
 Title: Django: procesamiento condicional de vistas
 Date: 2014-04-19
-Tags: django, optimizacion
+Tags: django, optimizacion,
 Slug: django-procesamiento-condicional-de-vistas
 Author: __alexander__
 

@@ -1,6 +1,6 @@
 Title: Markdown en django
 Date: 2013-12-07 10:18
-Tags: django, markdown
+Tags: django, markdown,
 Slug: markdown-en-django
 Author: __alexander__
 

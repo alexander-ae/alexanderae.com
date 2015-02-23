@@ -1,6 +1,6 @@
 Title: Una Historia de Caché
 Date: 2013-03-17 12:20
-Tags: memcached, optimizacion, base-de-datos
+Tags: memcached, optimizacion, base-de-datos,
 Slug: una-historia-de-cache
 Author: __alexander__
 

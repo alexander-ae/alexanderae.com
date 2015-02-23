@@ -1,6 +1,6 @@
 Title: Optimización de imágenes: Archivos PNG
 Date: 2013-07-07 20:00
-Tags: optimizacion, imagenes
+Tags: optimizacion, imagenes,
 Slug: optimizacion-de-imagenes-archivos-png
 Author: __alexander__
 
