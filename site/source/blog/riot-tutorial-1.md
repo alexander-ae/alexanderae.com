@@ -89,7 +89,7 @@ Nuestro archivo HTML principal (index.html) debe lucir similar a:
 <html>
     <head>
         <title>Sistema de comentarios</title>
-        <script src="riot.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/g/riot@2.0.11"></script>
     </head>
 
     <body>
@@ -104,8 +104,6 @@ Nuestro archivo HTML principal (index.html) debe lucir similar a:
     </body>
 </html>
 ~~~
-
-Nota: estoy usando riot.js desde la rama `dev`, aun no publicada a la fecha (por un bug relacionado al método `update`)
 
 En el html, hemos incluido nuestro contentenedor general (`<comment-box>`), el archivo `comments.js` y un script que monta[^4] nuestra etiqueta `<comment-box>`.
 
