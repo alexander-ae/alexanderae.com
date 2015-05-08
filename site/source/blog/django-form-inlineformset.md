@@ -177,8 +177,8 @@ El template es el que sigue:
 <form method="post" action="#">
     {% csrf_token %}
 
-    {{ IngredienteFormSet.management_form }}
-    {{ InstruccionFormSet.management_form }}
+    {{ ingredienteFormset.management_form }}
+    {{ instruccionFormset.management_form }}
 
     <fieldset class="form ">
         {% for field in form %}
