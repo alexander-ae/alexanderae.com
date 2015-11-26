@@ -18,7 +18,7 @@ RELATIVE_URLS = False
 DISQUS_SITENAME = 'alexanderaeblog'
 TWITTER_USERNAME = '__alexander_'
 EMAIL = 'alexander.ayasca.esquives@gmail.com'
-GOOGLE_ANALYTICS_ID = 'UA-37225699-1'
+GOOGLE_TAG_MANAGER_ID = 'GTM-K4R3KJ'
 GOOGLE_SITE_VERIFICATION = 'dTKg4FbepddqdYP9iaPVB2ltcImvpKoCB_0l-Notfbg'
 
 PLUGINS = ['assets', 'sitemap', 'gzip_cache', 'optimize_images']
