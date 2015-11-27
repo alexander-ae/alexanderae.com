@@ -22,3 +22,4 @@ GOOGLE_TAG_MANAGER_ID = 'GTM-K4R3KJ'
 GOOGLE_SITE_VERIFICATION = 'dTKg4FbepddqdYP9iaPVB2ltcImvpKoCB_0l-Notfbg'
 
 PLUGINS = ['assets', 'sitemap', 'gzip_cache', 'optimize_images']
+JINJA_EXTENSIONS = ['jinja2.ext.do', 'jinja2htmlcompress.HTMLCompress']
