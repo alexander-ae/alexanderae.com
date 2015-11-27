@@ -1,11 +1,11 @@
 Title: Procesos de software y prácticas ágiles I
 Date: 2015-11-26
-Tags: coursera,cursos,desarrollo-de-software
+Tags: coursera,cursos,desarrollo-de-software,
 Slug: software-processes-agile-practices-1
 Author: __alexander__
 Summary: Estoy llevando una especialización en Coursera llamada Sofware Product Management. A modo de resumen dicha especialización revisa las principales metodologías y prácticas de desarrollo ágil con el fin de que estemos en la capacidad de liderar a un equipo de desarrollo.
 
-Estoy llevando una especialización en **Coursera** llamada [Sofware Product Management][software-product-management]. A modo de resumen dicha especialización revisa las principales metodologías y prácticas de desarrollo ágil con el fin de que estemos en la capacidad de liderar a un equipo de desarrollo.
+Estoy llevando una especialización en **Coursera** llamada [Software Product Management][software-product-management]. A modo de resumen dicha especialización revisa las principales metodologías y prácticas de desarrollo ágil con el fin de que estemos en la capacidad de liderar a un equipo de desarrollo.
 
 Sin mayor preámbulo, adjunto mis apuntes de la primera semana:
 
