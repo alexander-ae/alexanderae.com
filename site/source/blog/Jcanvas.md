@@ -17,8 +17,10 @@ Entre sus características principales, resaltan:
 
 Se requiere añadir tanto jquery como el propio plugin:
 
-        <script src="jquery.min.js"></script>
-        <script src="jcanvas.min.js"></script>
+~~~
+    <script src="jquery.min.js"></script>
+    <script src="jcanvas.min.js"></script>
+~~~
 
 #### Uso
 

@@ -1,6 +1,6 @@
 Title: Django: Ejemplo de Form + InlineFormset
 Date: 2015-02-23
-Tags: django, tutorial,
+Tags: django, tutorial
 Slug: django-form-inlineformset
 Author: __alexander__
 Summary: A modo de práctica con los Form + Formset desarrollaré una aplicación para registrar recetas con sus respectivos ingredientes y procedimientos. El propósito será poder editar todo el detalle de una receta incluidos los ingredientes y procedimiento en la misma pantalla, de modo similar a como se trabaja en el admin de django con los inlines.
