@@ -43,13 +43,14 @@ FOOTER_LINKS = (('Blog', '/'),
                 )
 
 PLUGIN_PATHS = ['/home/alexander/Proyectos/pelican-plugins']
+# ARTICLE_PATHS = ['source/blog']
 PLUGINS = ['assets', 'sitemap']
 JINJA_EXTENSIONS = ['jinja2.ext.do']
 
 SHOW_AUTHOR = True
 AUTHOR_FULL_NAME = 'Alexander Geronimo Ayasca Esquives'
-META_DESCRIPTION = '''Sitio personal de __alexander__: Encontraras
-    publicaciones sobre algunas de mis afficciones como linux, la programacion
+META_DESCRIPTION = '''Sitio personal de __alexander__: Encontrarás
+    publicaciones sobre algunas de mis afficciones como linux, la programación
     en python, desarrollo web en general entre otros'''
 
 THEME = 'themes/skeleton-theme'

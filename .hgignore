@@ -32,17 +32,14 @@ datadir
 external/.~*
 *.orig
 
-# django
-#www/settings/*local.py
-
-# media
-www/media/*
 site/output/*
 site/cache/*
 
 # otros
 *.directory
 *.pid
+*.xml
+*.iml
 site/themes/alexander-theme/static/less/main.css
 
 # switch to regexp syntax.
