@@ -120,7 +120,7 @@ Véase: [lossless data compression][lossless-data-compression]
 [pngcrush]: http://pmt.sourceforge.net/pngcrush/index.html
 [optipng]: http://optipng.sourceforge.net/
 [pngquant]: http://pngquant.org/
-[pngquant]: http://tinypng.org/
+[tinypng]: http://tinypng.org/
 
 [lossless-data-compression]: http://en.wikipedia.org/wiki/Lossless_data_compression
 [png-bloques-auxiliares]: http://en.wikipedia.org/wiki/Portable_Network_Graphics#Ancillary_chunks
