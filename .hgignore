@@ -41,7 +41,7 @@ site/cache/*
 *.xml
 *.iml
 site/themes/alexander-theme/static/less/main.css
-
+.idea
 # switch to regexp syntax.
 syntax: regexp
 ^\.pc/

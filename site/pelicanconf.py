@@ -45,7 +45,9 @@ FOOTER_LINKS = (('Blog', '/'),
 PLUGIN_PATHS = ['/home/alexander/Proyectos/pelican-plugins']
 # ARTICLE_PATHS = ['source/blog']
 PLUGINS = ['assets', 'sitemap']
-JINJA_EXTENSIONS = ['jinja2.ext.do']
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.do']
+}
 
 SHOW_AUTHOR = True
 AUTHOR_FULL_NAME = 'Alexander Geronimo Ayasca Esquives'
