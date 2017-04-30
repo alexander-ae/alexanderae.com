@@ -52,7 +52,7 @@ JINJA_ENVIRONMENT = {
 SHOW_AUTHOR = True
 AUTHOR_FULL_NAME = 'Alexander Geronimo Ayasca Esquives'
 META_DESCRIPTION = '''Sitio personal de __alexander__: Encontrarás
-    publicaciones sobre algunas de mis afficciones como linux, la programación
+    publicaciones sobre algunas de mis aficciones como linux, la programación
     en python, desarrollo web en general entre otros'''
 
 THEME = 'themes/skeleton-theme'
