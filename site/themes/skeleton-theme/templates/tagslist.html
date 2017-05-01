@@ -2,7 +2,7 @@
 <div class="tags-container l">
     <span class='l'>Etiquetado como:&nbsp;</span>
     <ul class='tags-container-ul'>
-        {% for tag in article.tags[:-1] %}
+        {% for tag in article.tags %}
         <li class='tags-container-li'><a href="{{ SITEURL }}/tag/{{ tag|replace(' ', '%20') }}.html">{{ tag }}</a>{% if not loop.last %}, {{ ' ' }}{% endif %}</li>
         {% endfor %}
     </ul>

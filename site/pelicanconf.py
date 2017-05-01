@@ -24,7 +24,7 @@ DEFAULT_LANG = 'es'
 DEFAULT_DATE_FORMAT = '%d %b %Y'
 # LOCALE = ('es_ES',)
 
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 6
 DEFAULT_CATEGORY = "Sin categoría"
 MARKUP = ('md',)
 RELATIVE_URLS = False
@@ -43,17 +43,15 @@ FOOTER_LINKS = (('Blog', '/'),
                 )
 
 PLUGIN_PATHS = ['/home/alexander/Proyectos/pelican-plugins']
-# ARTICLE_PATHS = ['source/blog']
-PLUGINS = ['assets', 'sitemap']
+PLUGINS = ['assets', 'sitemap', 'tag_cloud']
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.do']
 }
 
 SHOW_AUTHOR = True
 AUTHOR_FULL_NAME = 'Alexander Geronimo Ayasca Esquives'
-META_DESCRIPTION = '''Sitio personal de __alexander__: Encontrarás
-    publicaciones sobre algunas de mis aficciones como linux, la programación
-    en python, desarrollo web en general entre otros'''
+META_DESCRIPTION = '''Mi blog personal, encontrarás publicaciones sobre algunas de mis aficciones como linux,
+    programación en python, desarrollo web en general entre otros'''
 
 THEME = 'themes/skeleton-theme'
 
@@ -62,7 +60,7 @@ SITEMAP = {
     'priorities': {
         'articles': 0.8,
         'indexes': 0.7,
-        'pages': 0.6
+        'pages': 0.5
     },
     'changefreqs': {
         'articles': 'daily',
@@ -80,9 +78,14 @@ GOOGLE_SITE_VERIFICATION = ''
 
 # Extra
 STATIC_PATHS = [
-    'extra/humans.txt',
-    'extra/favicon.png',
     'pictures',
-    ]
+    'extra/humans.txt',
+    'extra/favicon.png'
+]
+
+EXTRA_PATH_METADATA = {
+    'extra/humans.txt': {'path': 'humans.txt'},
+    'extra/favicon.png': {'path': 'favicon.png'}
+}
 
 DEBUG = True

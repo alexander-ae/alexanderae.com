@@ -1,9 +1,9 @@
 Title: Buenas prácticas para escalar Django
-Date: 2016-07-16 20:00
-Tags: django, django
+Date: 2016-07-16
+Tags: django
 Slug: django-best-practices
 Author: __alexander__
-Summary: Mi resumen de una de las conferencias brindadas en la DjangoCon Europa 2016. *Anton Pirker* nos introduce en la historia (ficticia) sobre el cómo aparece un problema para escalar un nuevo proyecto con django en la *vida real* de un desarrollador que no tiene experiencia en la administración de servidores.
+Summary: Mi resumen de una de las conferencias brindadas en la DjangoCon Europa 2016. Anton Pirker nos introduce en la historia (ficticia) sobre el cómo aparece un problema para escalar un nuevo proyecto con django en la vida real de un desarrollador que no tiene experiencia en la administración de servidores.
 
 
 Mi resumen de una de las conferencias brindadas en la DjangoCon Europa 2016. [Anton Pirker][anton-pirker] nos introduce en la historia (ficticia) sobre el cómo aparece un problema para escalar un nuevo proyecto con django en la *vida real* de un desarrollador que no tiene experiencia en la administración de servidores.

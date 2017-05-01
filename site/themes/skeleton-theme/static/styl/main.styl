@@ -1,0 +1,667 @@
+/* CONSTANTES */
+
+// colores
+$blanco = #FFF
+
+$gris_01 = #ECECEC
+$gris_02 = #DDD
+$gris_04 = #C0C0C0
+
+$gris_oscuro_01 = #666
+$gris_oscuro_02 = #555753
+$gris_oscuro_03 = #444
+
+$azul_oscuro_01 = #004E63
+
+$verde_oscuro_02 = #456E14
+
+$naranja_01 = #AF3A11
+
+$celeste_01 = #6490B0
+
+$color_em = $naranja_01
+
+$codehiliteBack = #333
+
+$entry_background = #BBB
+
+/* Mobile first queries */
+
+/* BASE */
+
+body
+  margin: 0
+  font-family: -apple-system, Roboto, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif
+
+a, .link
+  color $azul_oscuro_01
+  text-decoration: none
+
+  &:hover, &.active
+    color $naranja_01
+
+
+abbr
+  border-bottom: 0
+
+address
+  font-style normal
+
+blockquote
+  border-left 1px solid #ddd
+  padding 9px 20px 0 19px
+  margin 0 0 17px
+
+em
+  font-style normal
+  color $color_em
+
+b, strong
+  color darken($color_em, 10%)
+  font-weight normal
+
+sup
+  vertical-align super
+  font-size 1.2rem
+
+h1, h2, h3, h4, h5, h6
+  margin 5px 0 10px 0
+  color $naranja_01
+
+p
+  font-size: 1.6rem
+  line-height 1.5
+  margin-bottom 1.25rem
+
+  img
+    display: block
+    margin: 10px auto
+    border: 1px solid $gris_01
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .2)
+    background: $blanco
+    padding: 5px
+    max-width: 100%
+
+
+dt
+  font-weight: bold
+  margin-top: 5px
+
+ul,
+li,
+a
+  font-size: 1.6rem
+
+.l
+  float: left
+
+.r
+  float: right
+
+.clear
+  clear: both
+
+.container
+  width: 95%
+
+.hide-for-tablet
+  display: none
+
+// código (codehilite)
+.highlight
+  background: $codehiliteBack
+  font-size: 1.6rem
+  margin: 15px
+  padding: 10px
+  max-height: 400px
+  overflow: auto
+
+  span
+    line-height: 150%
+
+  .err
+    background-color: transparent
+
+
+pre
+  font-family: 'andale mono', 'monotype.com', 'monaco', 'courier new', 'courier', 'monospace'
+  margin-bottom: 0
+
+.inline-list
+  padding: 0
+  list-style: none
+
+  & > li
+    list-style: none
+    float: left
+    margin: 0 2rem 0 0
+    display: block
+
+
+// nota al pie en los artículos
+.footnote-ref
+  font-size: 1.25rem
+  padding: 0 5px
+
+.footnote
+  margin-top: 32px
+  font-size: 1.4rem
+
+  ol
+    list-style: outside decimal
+    margin: 0 0 10px 25px
+
+  hr
+    padding: 0
+    border: none
+    border-top: 5px double $gris_02
+    color: $gris_oscuro_01
+    text-align: center
+    height: 0
+    margin: 20px 0 10px
+
+  hr:after
+    content: "§"
+    display: inline-block
+    position: relative
+    top: -12px
+    font-size: 1.9rem
+    padding: 0 4px
+    background: $blanco
+    font-style: oblique
+    font-weight: bold
+
+  p
+    font-size: 1.4rem
+
+header
+  line-height: 6rem
+  background-image: url('../images/background-header.jpg')
+
+  a
+    color: $blanco
+    display: block
+    font-family: 'Cabin Sketch'
+    font-size: 4rem
+    text-align: center
+
+  a:hover
+    color: $blanco
+
+
+footer
+  margin: 25px 0
+  border-top: 4px solid #243e16
+  border-bottom: 4px solid #243e16
+  font-size: 1.6rem
+
+  nav
+    padding: 0 10px
+    float: left
+
+  .license
+    float: right
+    font-size: 1.6rem
+    margin: 0
+    padding-left: 10px
+
+  .license-a
+    font-size: 1.6rem
+
+
+#menu
+  margin: 5px 0
+
+  .nav-a
+    padding: 0 10px 5px 0
+    margin-right: 10px
+    display: inline-block
+    font-size: 1.6rem
+
+  .social
+    float: right
+
+  .social-a
+    margin: 0 4px
+
+  .social-email,
+  .social-twitter,
+  .social-rss
+    background: $gris_oscuro_02
+
+  .social-twitter:hover
+    background: $celeste_01
+
+  .social-rss:hover
+    background: $naranja_01
+
+  .social-email:hover
+    background: $verde_oscuro_02
+
+
+.paginator
+  margin: 15px
+  text-align: center
+
+  a
+    width: 36px
+    height: 28px
+    background-color: $gris_oscuro_02
+    color: $blanco
+    display: inline-block
+    margin: 0 6px 6px 0
+
+  .pag
+    width: 16px
+    height: 16px
+    display: block
+    margin: 2px 10px
+    text-align: center
+
+  .active
+    background-color: $naranja_01
+
+
+.search-box
+  margin: 20px 40px
+
+/* ETIQUETAS */
+
+.tags-container-ul
+  margin: 0
+  float: left
+
+.tags-container-li
+  display: inline
+  list-style-type: none
+  padding-right: 2px
+
+/* BLOG */
+
+body.home
+  h1
+    font-weight: bold
+    text-align: center
+
+  .entry
+    em
+      color #222
+
+    h2, h3, h4, h5
+      font-size 1.6rem
+      color #222
+      font-weight bold
+
+    hr
+      margin 1.5rem 0
+      border-top 1px solid #808080
+
+    .entry-content a
+      text-decoration underline
+      color #222
+
+
+.entry
+  background: $entry_background
+  border: #444 solid 2px
+  border-radius: 7px
+  margin: 10px 0 20px
+  min-height: 200px
+  position: relative
+  font-size: 1.6rem
+  padding: 20px 0 20px 20px
+
+  h2
+    line-height: 1
+
+  .entry-title-a
+    color: $naranja_01
+    font-size: 2.4rem
+    font-weight: bold
+
+  .entry-content
+    line-height: 150%
+
+    h3
+      font-size: 2rem
+
+    h4
+      font-size: 1.8rem
+
+    h5
+      font-size: 1.6rem
+
+    blockquote
+      border-left: 1px solid #af3a11
+
+    blockquote, blockquote p
+      color: #333
+
+
+  .ver-mas
+    float: right
+    margin-right: 10px
+
+  // fecha
+  .date
+    width: 100%
+    height: auto
+    background: $gris_oscuro_01
+    line-height: 1.2
+    text-align: center
+
+    span.month
+      text-transform capitalize
+      color $gris_04
+      font-size 2rem
+
+  .day
+    width: 100%
+    height: 12px
+    background: $gris_oscuro_03
+    color: #fff
+    font-size: 14px
+    line-height: 1
+    padding: 5px 0
+    margin: 0
+    text-align: center
+
+
+/* DETALLE DE ARTÍCULO */
+
+#article
+  margin: 0 auto
+  max-width: 800px
+  font-size: 1.5rem
+
+  h1
+    line-height: .75
+    margin-bottom: 1.5rem
+
+    a:hover
+      color: $naranja_01
+
+
+  abbr[title]
+    border: none
+
+  .published
+    font-size: 1.4rem
+
+  .author
+    font-size: 1.4rem
+
+  .article-title
+    color: $naranja_01
+    font-size: 3rem
+    font-weight: bold
+
+  .entry-content
+    margin: 20px 0 30px
+
+    p
+      line-height: 150%
+      margin: 10px 0
+
+    ol
+      list-style-type: decimal
+      margin-left: 20px
+
+    li
+      margin: 5px
+
+    h3
+      font-size: 2rem
+
+    h4
+      font-size: 1.8rem
+
+    h5
+      font-size: 1.4rem
+
+    h2, h3, h4, h5
+      font-weight: bold
+
+  .real-footer
+    margin: 5px
+
+  .comments
+    margin: 10px 0
+
+    h3
+      margin: 5px 0
+      font-size: 17px
+
+  pre
+    font-size: 1.5rem
+
+  a
+    color: $naranja_01
+
+    &:hover
+      text-decoration: underline
+
+
+  em
+    color: $azul_oscuro_01
+
+
+/* ARCHIVES - TAGS - PAGES */
+
+#archive-content
+  dd
+    margin: 5px 0
+
+    .year
+      font-size: 2.4rem
+      margin: 10px 0
+
+    .month
+      font-size: 2rem
+      margin: 10px 5px
+
+    .day
+      margin: 2px 15px
+
+
+#archive-content,
+#page-content
+  margin: 0 0 30px
+
+  h1
+    font-size: 2.5rem
+    font-weight: bold
+    color: $naranja_01
+    margin: 8px 0 16px
+
+
+/* VIDEOS */
+
+.responsive-embed-youtube
+  position: relative
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+
+  iframe
+    position: absolute
+    width: 100%!important
+    height: 100%!important
+
+
+/* ETIQUETAS */
+
+body.etiquetas
+  h1
+    font-weight: bold
+    font-size: 2.5rem
+
+    em
+      color: #222
+
+    #cloud
+      list-style-type:none
+        margin: 3rem 0
+
+      li
+        display: inline-block
+        margin-right:12px
+
+      .a-tag-0,
+      .a-tag-1,
+      .a-tag-2,
+      .a-tag-3,
+      .a-tag-4
+        text-decoration:none
+
+      .a-tag-0
+        font-size: 3rem
+        line-height: 1
+
+      .a-tag-1
+        font-size: 2.25rem
+        line-height: 1.2
+
+      .a-tag-2
+        font-size: 2.25rem
+        line-height: 1.2
+
+      .a-tag-3
+        font-size: 1.75rem
+        line-height: 1.5
+
+      .a-tag-4
+        font-size: 1.75rem
+        line-height: 1.5
+
+
+
+/* DETALLE DE ETIQUETA */
+
+.body.tag
+    ol
+      list-style-type: none
+      li
+        margin: 0 0 20px
+
+        a
+          color: $naranja_01
+
+          &:hover
+            color: $naranja_01
+
+
+/* Larger than mobile */
+
+  @media (min-width: 400px)
+
+    /* GENERAL */
+
+    #menu
+      margin: 12px 0
+
+      .nav-a
+        font-size: 1.8rem
+        padding: 0 15px 5px 0
+        margin-right: 10px
+
+
+/* Larger than phablet (also point when grid becomes active) */
+  @media (min-width: 550px)
+    .container
+      width: 90%
+
+    .hide-for-tablet
+      display: initial
+
+    header
+      line-height: 12rem
+
+      a
+        font-size: 6rem
+        max-width: 960px
+        margin: 0 auto
+
+
+    .entry
+      .entry-title-a
+        font-size: 3rem
+
+      .ver-mas
+        margin-right: 0
+
+      .date
+        width: 100%
+        padding: 0
+
+
+      #archive-content,
+      #page-content
+        margin: 0 0 30px
+
+        h1
+          font-size: 3.6rem
+
+      body.etiquetas
+        h1
+          font-weight: bold
+          font-size: 3.6rem
+
+          #cloud
+            margin: 3rem 0
+
+            li
+              display: inline-block
+              margin-right:12px
+
+            .a-tag-0
+              font-size: 4.5rem
+              line-height: 1
+
+            .a-tag-1
+              font-size: 4rem
+              line-height: 1.2
+
+            .a-tag-2
+              font-size: 3rem
+              line-height: 1.25
+
+            .a-tag-3
+              font-size: 2rem
+              line-height: 2
+
+            .a-tag-4
+              font-size: 1.5rem
+              line-height: 2.5
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px)
+  .container
+    width 80%
+
+  p
+    line-height 1.5
+    margin-bottom 1.5rem
+
+  .entry
+    .entry-title-a
+      font-size 3.6rem
+
+    .day
+      margin 2px auto
+      padding 4px
+      width 55px
+
+
+/* Larger than desktop */
+@media (min-width: 1000px)
+
+  .entry
+    .date
+      height 60px
+      margin 25px 20px 25px 0
+      width 90px !important
+      float right
+
+    .month
+      font-size 2.4rem

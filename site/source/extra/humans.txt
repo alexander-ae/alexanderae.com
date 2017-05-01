@@ -1,7 +1,7 @@
 /* TEAM */
-Owner: Alexander Ayasca Esquives                            
-Site: http://alexanderae.com
-                 
+Owner: Alexander Ayasca Esquives
+Site: https://alexanderae.com
+
 Twitter: https://twitter.com/__alexander_
 
 Location: Lima - Peru
@@ -13,15 +13,9 @@ Site generator:
     Pelican, static site generator:
         http://docs.getpelican.com/en/latest/
 
-Theme: 
-    Inspired in some parts of Joe di castro's theme:
-        https://bitbucket.org/joedicastro/joedicastro.com
-
 Icons:
     iconmonstr: http://iconmonstr.com/
 
 /* SITE */
 
 Standards: HTML5, CSS3
-Components: jQuery.
-Software: Chakra Linux, Sublime Text, Google Chrome, Bitbucket
