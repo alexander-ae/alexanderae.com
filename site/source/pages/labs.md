@@ -1,4 +1,4 @@
-Title: labs
+Title: Labs | Alexander A. E.
 
 
 Está página contiene un listado de proyectos de demostración o pruebas que he realizado

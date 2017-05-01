@@ -1,4 +1,4 @@
-Title: About me
+Title: About me | Alexander A. E.
 
 Hola, soy Alexander[^1], usuario de *GNU/Linux*, desarrollador, lector asiduo, interesado en el *opensource*, la ciencia, entre otros.
 

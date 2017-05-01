@@ -454,40 +454,40 @@ body.etiquetas h1 {
   font-weight: bold;
   font-size: 2.5rem;
 }
-body.etiquetas h1 em {
+body.etiquetas em {
   color: #222;
 }
-body.etiquetas h1 #cloud list-style-type:none {
+body.etiquetas #cloud list-style-type:none {
   margin: 3rem 0;
 }
-body.etiquetas h1 #cloud li {
+body.etiquetas #cloud li {
   display: inline-block;
   margin-right: 12px;
 }
-body.etiquetas h1 #cloud .a-tag-0,
-body.etiquetas h1 #cloud .a-tag-1,
-body.etiquetas h1 #cloud .a-tag-2,
-body.etiquetas h1 #cloud .a-tag-3,
-body.etiquetas h1 #cloud .a-tag-4 {
+body.etiquetas #cloud .a-tag-0,
+body.etiquetas #cloud .a-tag-1,
+body.etiquetas #cloud .a-tag-2,
+body.etiquetas #cloud .a-tag-3,
+body.etiquetas #cloud .a-tag-4 {
   text-decoration: none;
 }
-body.etiquetas h1 #cloud .a-tag-0 {
+body.etiquetas #cloud .a-tag-0 {
   font-size: 3rem;
   line-height: 1;
 }
-body.etiquetas h1 #cloud .a-tag-1 {
+body.etiquetas #cloud .a-tag-1 {
   font-size: 2.25rem;
   line-height: 1.2;
 }
-body.etiquetas h1 #cloud .a-tag-2 {
+body.etiquetas #cloud .a-tag-2 {
   font-size: 2.25rem;
   line-height: 1.2;
 }
-body.etiquetas h1 #cloud .a-tag-3 {
+body.etiquetas #cloud .a-tag-3 {
   font-size: 1.75rem;
   line-height: 1.5;
 }
-body.etiquetas h1 #cloud .a-tag-4 {
+body.etiquetas #cloud .a-tag-4 {
   font-size: 1.75rem;
   line-height: 1.5;
 }
@@ -553,30 +553,30 @@ body.etiquetas h1 #cloud .a-tag-4 {
     font-weight: bold;
     font-size: 3.6rem;
   }
-  .entry body.etiquetas h1 #cloud {
+  .entry body.etiquetas #cloud {
     margin: 3rem 0;
   }
-  .entry body.etiquetas h1 #cloud li {
+  .entry body.etiquetas #cloud li {
     display: inline-block;
     margin-right: 12px;
   }
-  .entry body.etiquetas h1 #cloud .a-tag-0 {
+  .entry body.etiquetas #cloud .a-tag-0 {
     font-size: 4.5rem;
     line-height: 1;
   }
-  .entry body.etiquetas h1 #cloud .a-tag-1 {
+  .entry body.etiquetas #cloud .a-tag-1 {
     font-size: 4rem;
     line-height: 1.2;
   }
-  .entry body.etiquetas h1 #cloud .a-tag-2 {
+  .entry body.etiquetas #cloud .a-tag-2 {
     font-size: 3rem;
     line-height: 1.25;
   }
-  .entry body.etiquetas h1 #cloud .a-tag-3 {
+  .entry body.etiquetas #cloud .a-tag-3 {
     font-size: 2rem;
     line-height: 2;
   }
-  .entry body.etiquetas h1 #cloud .a-tag-4 {
+  .entry body.etiquetas #cloud .a-tag-4 {
     font-size: 1.5rem;
     line-height: 2.5;
   }

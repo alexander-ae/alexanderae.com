@@ -32,14 +32,15 @@ SUMMARY_MAX_LENGTH = 80
 
 # Links
 MENUITEMS = (('Blog', '/'),
-             ('Labs', '/pages/labs.html'),
+             ('Sobre mi', '/pages/about-me.html'),
              ('Archivos', '/archives.html'),
              ('Etiquetas', '/tags.html'),
              (u'Buscar aquí', '/pages/buscar.html'),
              )
 
 FOOTER_LINKS = (('Blog', '/'),
-               ('Sobre mi', '/pages/about-me.html'),
+                ('Sobre mi', '/pages/about-me.html'),
+                ('Labs', '/pages/labs.html'),
                 )
 
 PLUGIN_PATHS = ['/home/alexander/Proyectos/pelican-plugins']

@@ -2,90 +2,118 @@
 <html lang='{{ DEFAULT_LANG }}'>
 <head>
 
-    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="{{ AUTHOR }}">
-    <meta name="google-site-verification" content="{{ GOOGLE_SITE_VERIFICATION }}" />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+  <meta charset="utf-8"/>
+  <meta name="author" content="{{ AUTHOR }}">
+  <meta name="google-site-verification" content="{{ GOOGLE_SITE_VERIFICATION }}"/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-    <link rel="canonical" href="{{ SITEURL }}"/>
-    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="/favicon.png">
-    <link rel="author" href="/humans.txt" />
+  <link rel="canonical" href="{{ SITEURL }}"/>
+  <link rel="shortcut icon" href="/favicon.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <link rel="author" href="/humans.txt"/>
 
-    {% block metadescripcion %}
+  {% block metadescripcion %}
     <meta name='description' content="{{ META_DESCRIPTION }}">
-    {% endblock metadescripcion %}
+  {% endblock metadescripcion %}
 
-    {% if FEED_ALL_ATOM %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} {{ ' ' }} Atom Feed" />
-    {% endif %}
+  {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
+          title="{{ SITENAME }} {{ ' ' }} Atom Feed"/>
+  {% endif %}
 
-    {% if FEED_ALL_RSS %}
-    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} {{ ' ' }} RSS Feed" />
-    {% endif %}
+  {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
+          title="{{ SITENAME }} {{ ' ' }} RSS Feed"/>
+  {% endif %}
 
-    <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:700&amp;text=AlexanderAE.-' rel='stylesheet' type='text/css'/>
+  <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:700&amp;text=AlexanderAE.-' rel='stylesheet'
+        type='text/css'/>
 
-    {% block css %}
+  {% block css %}
     {% assets filters="cssmin", output="css/style.min.css", "css/normalize.css", "css/pygments.css", "css/skeleton.css" , "css/main.css" %}
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
+      <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
 
-    {% endblock css %}
+  {% endblock css %}
 </head>
 
 <body class='{% block bodyClass %}{% endblock bodyClass %}'>
 
-    <header>
-        <a href="{{ SITEURL }}">{{ SITENAME }}</a>
-    </header>
+<header>
+  <a href="{{ SITEURL }}">{{ SITENAME }}</a>
+</header>
 
-    <div class='container'>
-        <nav id="menu" class='row'>
-            <div class="l">
-            {% for title, link in MENUITEMS %}
-                <a href="{{ link }}" class="nav-a">{{ title }}</a>
-            {% endfor %}
-            </div>
-
-            <div class="social">
-                <a href="/{{ FEED_ALL_RSS }}" class='social-a' target='_blank' title='Feed RSS'><img src="/theme/images/rss_.png" alt="rss" width="32" height="32" class='social-rss'></a>
-
-                <a href='https://twitter.com/{{ TWITTER_USERNAME }}' class='social-a' target='_blank' title='{{ TWITTER_USERNAME }}'><img src="/theme/images/twitter_.png" alt="twitter" width="32" height="32" class='social-twitter'></a>
-
-                <a href="mailto:{{ EMAIL }}" class='social-a' title='{{ EMAIL }}'><img src="/theme/images/email_.png" alt="mail" width="32" height="32" class='social-email'></a>
-            </div>
-        </nav>
-
-        <!-- /#menu -->
-
-        {% block content %}
-        {% endblock %}
-
-        <footer>
-            <nav>
-                <ul class='inline-list'>
-                {% for title, link in FOOTER_LINKS %}
-                    <li><a href="{{ link }}" title="{{ title }}" class='link'>{{ title }}</a></li>
-                {% endfor %}
-                </ul>
-            </nav>
-
-            <small class="license">
-                El contenido se publica bajo licencia{{' '}}
-                <a class='license-a link' href="http://creativecommons.org/licenses/by-sa/4.0/" target='_blank' rel="license">Creative Commons</a>
-            </small>
-
-            <br class="clear">
-        </footer>
+<div class='container'>
+  <nav id="menu" class='row'>
+    <div class="l">
+      {% for title, link in MENUITEMS %}
+        <a href="{{ link }}" class="nav-a">{{ title }}</a>
+      {% endfor %}
     </div>
 
-    {% block js %}
-    <script src="/theme/js/zepto.min.js"></script>
-    <script src="/theme/js/app.js"></script>
-    {% endblock js %}
+    <div class="social">
+      <a href="/{{ FEED_ALL_RSS }}" class='social-a' target='_blank' title='Feed RSS'><img src="/theme/images/rss_.png"
+                                                                                           alt="rss" width="32"
+                                                                                           height="32"
+                                                                                           class='social-rss'></a>
 
-    {% include "google_tag_manager.html" %}
+      <a href='https://twitter.com/{{ TWITTER_USERNAME }}' class='social-a' target='_blank'
+         title='{{ TWITTER_USERNAME }}'><img src="/theme/images/twitter_.png" alt="twitter" width="32" height="32"
+                                             class='social-twitter'></a>
+
+      <a href="mailto:{{ EMAIL }}" class='social-a' title='{{ EMAIL }}'><img src="/theme/images/email_.png" alt="mail"
+                                                                             width="32" height="32"
+                                                                             class='social-email'></a>
+    </div>
+  </nav>
+
+  <!-- /#menu -->
+
+  {% block content %}
+  {% endblock %}
+
+  <footer>
+    <nav>
+      <ul class='inline-list'>
+        {% for title, link in FOOTER_LINKS %}
+          <li><a href="{{ link }}" title="{{ title }}" class='link'>{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <small class="license">
+      El contenido se publica bajo licencia{{ ' ' }}
+      <a class='license-a link' href="http://creativecommons.org/licenses/by-sa/4.0/" target='_blank' rel="license">Creative
+        Commons</a>
+    </small>
+
+    <br class="clear">
+  </footer>
+</div>
+
+{% block js %}
+  <script src="/theme/js/zepto.min.js"></script>
+  <script>
+      $(document).ready(function () {
+        /* addClass 'active' */
+          $('a').each(function () {
+              if ($(this).attr('href') === window.location.pathname) {
+                  $(this).addClass('active');
+              }
+          })
+
+          if (window.location.pathname === '/') {
+              $('.first-page').addClass('active');
+          }
+
+          if ($('body').hasClass('home') || $('body').hasClass('etiquetas')) {
+              $('a.footnote-ref').parent().remove();
+          }
+      });
+  </script>
+{% endblock js %}
+
+{% include "google_tag_manager.html" %}
 </body>
 </html>

@@ -1,4 +1,4 @@
-title: buscar
+title: Búsqueda | Alexander A. E.
 category: buscar
 
 <div class='search-box'>
