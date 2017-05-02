@@ -4,6 +4,8 @@ Tags: front-end, css,
 Slug: bootstrap-vs-foundation
 Author: __alexander__
 
+> Artículo desactualizado
+
 Hace ya un buen tiempo que llevo usando [bootstrap][bootstrap] para maquetar uno que otro sitio, sobre todo por la facilidad que te otorga el tener una base sobre la que comenzar. Recientemente[^1] he probado [Foundation][foundation], sobre todo porque siempre es bueno conocer las alternativas. Y a pesar de que tan solo lo he usado un par de de días, podría decir que en algunos aspectos puede ser mucho más conveniente, que el usar bootstrap.
 
 Si bien podría realizar aquí una comparativa de las bondades (a mi parecer) de cada uno de estos proyectos, ¿por qué repetir lo que ya esta hecho? (DRY[^2])
