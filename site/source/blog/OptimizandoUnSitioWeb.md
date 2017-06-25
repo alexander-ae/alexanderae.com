@@ -1,4 +1,4 @@
-Title: Optimizando un sitio web 1
+Title: Optimizando un sitio web - 1ra parte
 Date: 2017-05-01
 Tags: optimizacion
 Slug: optimizando-un-website-1
