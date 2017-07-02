@@ -176,18 +176,24 @@ pre
     font-size: 1.4rem
 
 header
-  line-height: 6rem
-  background-image: url('../images/background-header.jpg')
+  line-height 4rem
+  font-size 2.4rem
+  font-weight bold
+
+  q
+    display block
+    margin 2rem auto
+    text-align center
 
   a
-    color: $blanco
-    display: block
-    font-family: 'Cabin Sketch'
-    font-size: 4rem
-    text-align: center
+    color $naranja_01
+    display block
+    // font-family: ''
+    font-size 4rem
+    text-align center
 
   a:hover
-    color: $blanco
+    color: $naranja_01
 
 
 footer
@@ -212,6 +218,7 @@ footer
 
 #menu
   margin: 5px 0
+  border-bottom .05rem solid alpha($azul_oscuro_01, .5)
 
   .nav-a
     padding: 0 10px 5px 0
@@ -371,7 +378,7 @@ body.home
 
 #article
   margin: 0 auto
-  max-width: 800px
+  max-width: 900px
   font-size: 1.5rem
 
   h1
@@ -384,6 +391,7 @@ body.home
 
   abbr[title]
     border: none
+    text-decoration-line: none;
 
   .published
     font-size: 1.4rem
@@ -576,12 +584,13 @@ body.etiquetas
       display: initial
 
     header
-      line-height: 12rem
+      line-height: 1
+      margin 4rem 0
 
       a
-        font-size: 6rem
+        font-size: 5rem
         max-width: 960px
-        margin: 0 auto
+        margin: 1rem auto
 
 
     .entry
