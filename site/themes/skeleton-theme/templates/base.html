@@ -27,9 +27,6 @@
           title="{{ SITENAME }} {{ ' ' }} RSS Feed"/>
   {% endif %}
 
-  <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch:700&amp;text=AlexanderAE.-' rel='stylesheet'
-        type='text/css'/>
-
   {% block css %}
     {% assets filters="cssmin", output="css/style.min.css", "css/normalize.css", "css/pygments.css", "css/skeleton.css" , "css/main.css" %}
       <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
