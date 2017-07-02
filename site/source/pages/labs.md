@@ -1,5 +1,5 @@
 Title: Labs | Alexander A. E.
-
+save_as: pages/labs.html
 
 Está página contiene un listado de proyectos de demostración o pruebas que he realizado
 

@@ -1,4 +1,5 @@
 Title: PyFPDF | Alexander A. E.
+save_as: pages/pyfpdf.html
 
 PyFPDF es una librería que genera documentos PDF mediante python. Es un port de [FPDF][FPDF], el cual está escrito en PHP.
 

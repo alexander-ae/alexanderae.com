@@ -36,6 +36,7 @@
     {% endassets %}
 
   {% endblock css %}
+  {% include "google_tag_manager.html" %}
 </head>
 
 <body class='{% block bodyClass %}{% endblock bodyClass %}'>
@@ -113,7 +114,5 @@
       });
   </script>
 {% endblock js %}
-
-{% include "google_tag_manager.html" %}
 </body>
 </html>
