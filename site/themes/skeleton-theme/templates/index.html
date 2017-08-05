@@ -4,36 +4,32 @@
 {% block bodyClass %}home{% endblock bodyClass %}
 
 {% block content %}
-<section id="blog-content">
+  <section id="blog-content">
     {% for article in articles_page.object_list %}
-        <article class="entry row">
-            <div class="columns ten">
+      <article class="entry row">
+        <div class="columns eleven">
 
-                <h2 class="entry-title">
-                    <a class='entry-title-a' href="{{ article.url }}" rel="bookmark" title="Permalink a{{ " " }}{{ article.title}}">{{ article.title }}</a>
-                </h2>
+          <h2 class="entry-title">
+            <a class='entry-title-a' href="{{ article.url }}" rel="bookmark"
+               title="Permalink a{{ " " }}{{ article.title }}">{{ article.title }}</a>
+          </h2>
 
-                <div class="entry-content">{{ article.summary }}</div>
+          <abbr class="published" title="{{ article.date.isoformat() }}">
+            Publicado el {{ ' ' }} {{ article.locale_date }}
+          </abbr>
 
-                <div class="entry-footer">
-                    {% include "tagslist.html" %}
-                    <div class="ver-mas"><a href="{{ SITEURL }}/{{ article.url }}">Ver más</a></div>
-                    <div class="clear"></div>
-                </div>
-            </div>
+          <div class="entry-content">{{ article.summary }}</div>
 
-            <div class="date columns two hide-for-tablet" data-date='{{ article.locale_date }}'>
-                <div class="month">
-                    <span class="month">{{ article.locale_date.split()[1] }}</span>
-                    <div class="day">
-                        {{ article.locale_date.split()[0] }}
-                    </div>
-                </div>
-            </div>
-        </article>
+          <div class="entry-footer">
+            {% include "tagslist.html" %}
+            <div class="ver-mas"><a href="{{ SITEURL }}/{{ article.url }}">Ver más</a></div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </article>
     {% endfor %}
     <!-- posts-list -->
 
     {% include 'pagination.html' %}
-</section><!-- /#blog-content -->
+  </section><!-- /#blog-content -->
 {% endblock content %}

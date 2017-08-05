@@ -5,11 +5,9 @@ $blanco = #FFF
 
 $gris_01 = #ECECEC
 $gris_02 = #DDD
-$gris_04 = #C0C0C0
 
 $gris_oscuro_01 = #666
 $gris_oscuro_02 = #555753
-$gris_oscuro_03 = #444
 
 $azul_oscuro_01 = #004E63
 
@@ -23,9 +21,12 @@ $color_em = $naranja_01
 
 $codehiliteBack = #333
 
-/* Mobile first queries */
+$html_background = rgba(243, 243, 243, 0.5)
 
 /* BASE */
+
+html
+  background: $html_background
 
 body
   margin: 0
@@ -38,9 +39,12 @@ a, .link
   &:hover, &.active
     color $naranja_01
 
-
 abbr
   border-bottom: 0
+
+abbr[title]
+  border: none
+  text-decoration-line: none;
 
 address
   font-style normal
@@ -79,7 +83,6 @@ p
     background: $blanco
     padding: 5px
     max-width: 100%
-
 
 dt
   font-weight: bold
@@ -123,7 +126,6 @@ li p
   .err
     background-color: transparent
 
-
 pre
   font-family: 'andale mono', 'monotype.com', 'monaco', 'courier new', 'courier', 'monospace'
   margin-bottom: 0
@@ -137,7 +139,6 @@ pre
     float: left
     margin: 0 2rem 0 0
     display: block
-
 
 // nota al pie en los artículos
 .footnote-ref
@@ -188,13 +189,11 @@ header
   a
     color $naranja_01
     display block
-    // font-family: ''
     font-size 4rem
     text-align center
 
   a:hover
     color: $naranja_01
-
 
 footer
   margin: 25px 0
@@ -214,7 +213,6 @@ footer
 
   .license-a
     font-size: 1.6rem
-
 
 #menu
   margin: 5px 0
@@ -246,7 +244,6 @@ footer
   .social-email:hover
     background: $verde_oscuro_02
 
-
 .paginator
   margin: 15px
   text-align: center
@@ -268,7 +265,6 @@ footer
 
   .active
     background-color: $naranja_01
-
 
 .search-box
   margin: 20px 40px
@@ -307,6 +303,9 @@ body.home
     .entry-content a
       color #222
 
+    abbr
+      font-size: 1.4rem;
+      color: #af3a11;
 
 .entry
   border: #444 solid 2px
@@ -335,35 +334,11 @@ body.home
     float: right
     margin-right: 10px
 
-  // fecha
-  .date
-    width: 100%
-    height: auto
-    background: $gris_oscuro_01
-    line-height: 1.2
-    text-align: center
-
-    span.month
-      text-transform capitalize
-      color $gris_04
-      font-size 2rem
-
-  .day
-    width: 100%
-    height: 12px
-    background: $gris_oscuro_03
-    color: #fff
-    font-size: 14px
-    line-height: 1
-    padding: 5px 0
-    margin: 0
-    text-align: center
-
 .entry-content
   line-height: 150%
 
   h2
-    font-size 2.25 rem
+    font-size 2.25rem
 
   h3
     font-size: 2rem
@@ -387,11 +362,6 @@ body.home
 
     a:hover
       color: $naranja_01
-
-
-  abbr[title]
-    border: none
-    text-decoration-line: none;
 
   .published
     font-size: 1.4rem
@@ -452,10 +422,8 @@ body.home
     &:hover
       text-decoration: underline
 
-
   em
     color: $azul_oscuro_01
-
 
 /* ARCHIVES - TAGS - PAGES */
 
@@ -474,7 +442,6 @@ body.home
     .day
       margin: 2px 15px
 
-
 #archive-content,
 #page-content
   margin: 0 0 30px
@@ -485,7 +452,6 @@ body.home
     color: $naranja_01
     margin: 8px 0 16px
 
-
 /* VIDEOS */
 
 .responsive-embed-youtube
@@ -494,9 +460,8 @@ body.home
 
   iframe
     position: absolute
-    width: 100%!important
-    height: 100%!important
-
+    width: 100% !important
+    height: 100% !important
 
 /* ETIQUETAS */
 
@@ -514,14 +479,14 @@ body.etiquetas
 
     li
       display: inline-block
-      margin-right:12px
+      margin-right: 12px
 
     .a-tag-0,
     .a-tag-1,
     .a-tag-2,
     .a-tag-3,
     .a-tag-4
-      text-decoration:none
+      text-decoration: none
 
     .a-tag-0
       font-size: 3rem
@@ -543,107 +508,100 @@ body.etiquetas
       font-size: 1.75rem
       line-height: 1.5
 
-
 /* DETALLE DE ETIQUETA */
 
 .body.tag
-    ol
-      list-style-type: none
+  ol
+    list-style-type: none
 
-      li
-        margin: 0 0 20px
+    li
+      margin: 0 0 20px
 
-        a
+      a
+        color: $naranja_01
+
+        &:hover
           color: $naranja_01
-
-          &:hover
-            color: $naranja_01
-
 
 /* Larger than mobile */
 
-  @media (min-width: 400px)
+@media (min-width: 400px)
 
-    /* GENERAL */
+  /* GENERAL */
+  #menu
+    margin: 12px 0
 
-    #menu
-      margin: 12px 0
-
-      .nav-a
-        font-size: 1.8rem
-        padding: 0 15px 5px 0
-        margin-right: 10px
-
+    .nav-a
+      font-size: 1.8rem
+      padding: 0 15px 5px 0
+      margin-right: 10px
 
 /* Larger than phablet (also point when grid becomes active) */
-  @media (min-width: 550px)
-    .container
-      width: 90%
+@media (min-width: 550px)
+  .container
+    width: 90%
 
-    .hide-for-tablet
-      display: initial
+  .hide-for-tablet
+    display: initial
 
-    header
-      line-height: 1
-      margin 4rem 0
+  header
+    line-height: 1
+    margin 4rem 0
 
-      a
-        font-size: 5rem
-        max-width: 960px
-        margin: 1rem auto
+    a
+      font-size: 5rem
+      max-width: 960px
+      margin: 1rem auto
 
+  .entry
+    .entry-title-a
+      font-size: 3rem
 
-    .entry
-      .entry-title-a
-        font-size: 3rem
+    .ver-mas
+      margin-right: 0
 
-      .ver-mas
-        margin-right: 0
+    .date
+      width: 100%
+      padding: 0
 
-      .date
-        width: 100%
-        padding: 0
+    #archive-content,
+    #page-content
+      margin: 0 0 30px
 
+      h1
+        font-size: 3.6rem
 
-      #archive-content,
-      #page-content
-        margin: 0 0 30px
+    body.etiquetas
+      h1
+        font-weight: bold
+        font-size: 3.6rem
 
-        h1
-          font-size: 3.6rem
+      #cloud
+        margin: 3rem 0
 
-      body.etiquetas
-        h1
-          font-weight: bold
-          font-size: 3.6rem
+        li
+          display: inline-block
+          margin-right: 12px
 
-        #cloud
-          margin: 3rem 0
+        .a-tag-0
+          font-size: 4.5rem
+          line-height: 1
 
-          li
-            display: inline-block
-            margin-right:12px
+        .a-tag-1
+          font-size: 4rem
+          line-height: 1.2
 
-          .a-tag-0
-            font-size: 4.5rem
-            line-height: 1
+        .a-tag-2
+          font-size: 3rem
+          line-height: 1.25
 
-          .a-tag-1
-            font-size: 4rem
-            line-height: 1.2
+        .a-tag-3
+          font-size: 2rem
+          line-height: 2
 
-          .a-tag-2
-            font-size: 3rem
-            line-height: 1.25
-
-          .a-tag-3
-            font-size: 2rem
-            line-height: 2
-
-          .a-tag-4
-            font-size: 1.5rem
-            line-height: 2.5
-
+        .a-tag-4
+          font-size: 1.5rem
+          line-height: 2.5
 
 /* Larger than tablet */
 
@@ -663,17 +621,3 @@ body.etiquetas
       margin 2px auto
       padding 4px
       width 55px
-
-
-/* Larger than desktop */
-@media (min-width: 1000px)
-
-  .entry
-    .date
-      height 60px
-      margin 25px 20px 25px 0
-      width 90px !important
-      float right
-
-    .month
-      font-size 2.4rem

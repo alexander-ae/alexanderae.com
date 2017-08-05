@@ -1,6 +1,8 @@
 /* CONSTANTES */
-/* Mobile first queries */
 /* BASE */
+html {
+  background: rgba(243,243,243,0.5);
+}
 body {
   margin: 0;
   font-family: -apple-system, Roboto, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -18,6 +20,10 @@ a.active,
 }
 abbr {
   border-bottom: 0;
+}
+abbr[title] {
+  border: none;
+  text-decoration-line: none;
 }
 address {
   font-style: normal;
@@ -279,6 +285,10 @@ body.home .entry hr {
 body.home .entry .entry-content a {
   color: #222;
 }
+body.home .entry abbr {
+  font-size: 1.4rem;
+  color: #af3a11;
+}
 .entry {
   border: #444 solid 2px;
   border-radius: 7px;
@@ -307,29 +317,6 @@ body.home .entry .entry-content a {
   float: right;
   margin-right: 10px;
 }
-.entry .date {
-  width: 100%;
-  height: auto;
-  background: #666;
-  line-height: 1.2;
-  text-align: center;
-}
-.entry .date span.month {
-  text-transform: capitalize;
-  color: #c0c0c0;
-  font-size: 2rem;
-}
-.entry .day {
-  width: 100%;
-  height: 12px;
-  background: #444;
-  color: #fff;
-  font-size: 14px;
-  line-height: 1;
-  padding: 5px 0;
-  margin: 0;
-  text-align: center;
-}
 .entry-content {
   line-height: 150%;
 }
@@ -357,10 +344,6 @@ body.home .entry .entry-content a {
 }
 #article h1 a:hover {
   color: #af3a11;
-}
-#article abbr[title] {
-  border: none;
-  text-decoration-line: none;
 }
 #article .published {
   font-size: 1.4rem;
@@ -612,17 +595,5 @@ body.etiquetas #cloud .a-tag-4 {
     margin: 2px auto;
     padding: 4px;
     width: 55px;
-  }
-}
-/* Larger than desktop */
-@media (min-width: 1000px) {
-  .entry .date {
-    height: 60px;
-    margin: 25px 20px 25px 0;
-    width: 90px !important;
-    float: right;
-  }
-  .entry .month {
-    font-size: 2.4rem;
   }
 }
