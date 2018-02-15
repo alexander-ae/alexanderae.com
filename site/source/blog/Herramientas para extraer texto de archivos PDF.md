@@ -4,7 +4,14 @@ Tags: pdf
 Slug: extraccion-de-texto-desde-pdf
 Author: __alexander__
 
-A continuación, una comparación de 3 herramientas que se pueden utilizar para extraer texto de archivos PDF
+Algunos casos de uso en los que se requiera extraer texto de archivos pdf pueden ser:
+
+- ejecutar análisis de curriculums vitae (hojas de vida)
+- para permitir la búsqueda por contenidos en un archivo
+- obtención de los datos de contacto de empresas desde boletas o facturas de pago
+- conversión a un formato más amigable para su presentación en la web (html) entre otros
+
+A continuación, 3 herramientas que se pueden utilizar para extraer texto de archivos PDF:
 
 ## 1. PDFMiner (python):
 
