@@ -40,7 +40,6 @@ MENUITEMS = (('Blog', '/'),
 
 FOOTER_LINKS = (('Blog', '/'),
                 ('Sobre mi', '/pages/about-me.html'),
-                ('Labs', '/pages/labs.html'),
                 )
 
 PLUGIN_PATHS = ['/home/alexander/Proyectos/pelican-plugins']
