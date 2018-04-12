@@ -171,7 +171,7 @@ def test():
           </body>
         </html>
     ''')
-    print tmpl.render(title=42, href='index.html')
+    print(tmpl.render(title=42, href='index.html'))
 
     env = Environment(extensions=[SelectiveHTMLCompress])
     tmpl = env.from_string('''
@@ -187,7 +187,7 @@ def test():
         </p>
         {% endstrip %}
     ''')
-    print tmpl.render(foo=42)
+    print(tmpl.render(foo=42))
 
 
 if __name__ == '__main__':

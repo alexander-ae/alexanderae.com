@@ -3,7 +3,7 @@
 
 from __future__ import unicode_literals
 
-AUTHOR = u"__alexander__"
+AUTHOR = "__alexander__"
 SITENAME = u"Alexander A. E."
 SITEURL = 'http://127.0.0.1:8000'
 
@@ -43,14 +43,16 @@ FOOTER_LINKS = (('Blog', '/'),
                 ('Labs', '/pages/labs.html'),
                 )
 
-PLUGIN_PATHS = ['/home/alexander/Proyectos/pelican-plugins']
+PLUGIN_PATHS = ['/home/devstaff/.envs/alexanderae.com/lib/python2.7/site-packages/pelican-plugins/']
+# ARTICLE_PATHS = ['source/blog']
 PLUGINS = ['assets', 'sitemap', 'tag_cloud']
+
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.do']
 }
 
 SHOW_AUTHOR = True
-AUTHOR_FULL_NAME = 'Alexander Geronimo Ayasca Esquives'
+AUTHOR_FULL_NAME = 'Alexander Ayasca Esquives'
 META_DESCRIPTION = '''Mi blog personal, encontrarás publicaciones sobre algunas de mis aficciones como linux,
     programación en python, desarrollo web en general entre otros'''
 

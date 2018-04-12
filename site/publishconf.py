@@ -7,7 +7,7 @@ from pelicanconf import *
 
 SITEURL = 'https://alexanderae.com'
 
-OUTPUT_PATH = '/home/alcaudon/webapps/alexander_ae_site'
+OUTPUT_PATH = '/home/devstaff/webapps/alexanderae.com/production'
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
@@ -21,7 +21,12 @@ EMAIL = 'alexander.ayasca.esquives@gmail.com'
 GOOGLE_TAG_MANAGER_ID = 'GTM-K4R3KJ'
 GOOGLE_SITE_VERIFICATION = 'dTKg4FbepddqdYP9iaPVB2ltcImvpKoCB_0l-Notfbg'
 
-PLUGINS = ['assets', 'sitemap', 'gzip_cache', 'optimize_images']
+PLUGINS = ['assets', 'sitemap', 'gzip_cache', 'optimize_images', 'tag_cloud']
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.do', 'jinja2htmlcompress.HTMLCompress']
 }
+
+ASSET_SOURCE_PATHS = [
+    '/home/devstaff/webapps/alexanderae.com/dev/site/themes/skeleton-theme/static/',
+]
+

@@ -3,7 +3,7 @@ PELICANOPTS=
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/source
-OUTPUTDIR=$(BASEDIR)/output
+OUTPUTDIR=/home/devstaff/webapps/alexanderae.com/production/
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
