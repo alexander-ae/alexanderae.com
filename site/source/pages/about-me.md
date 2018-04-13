@@ -1,6 +1,6 @@
-Title: About me | Alexander A. E.
+Title: About me | Alexander Ayasca Esquives
 save_as: pages/about-me.html
-
+summary: Hola, soy Alexander, usuario de GNU/Linux, desarrollador, lector asiduo, interesado en el opensource, la ciencia, entre otros.
 
 Hola, soy Alexander[^1], usuario de *GNU/Linux*, desarrollador, lector asiduo, interesado en el *opensource*, la ciencia, entre otros.
 

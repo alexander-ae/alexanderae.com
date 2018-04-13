@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block title %}{{ page.title }}{%endblock%}
+{% block metadescripcion %}
+    <meta name='description' content="{{ page.summary|striptags }}">
+{% endblock metadescripcion %}
 
 {% block content %}
     <section id="page-content">
