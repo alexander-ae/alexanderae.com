@@ -15,7 +15,7 @@ Entre las ventajas de mailgun tenemos:
 
 ### Los pasos para realizar la integración son:
 
-*1.* Registrar una cuenta en [www.mailgun.com](www.mailgun.com) notando que cada mes tendremos para enviar hasta 10 000 emails gratuitos.
+*1.* Registrar una cuenta en [www.mailgun.com](https://www.mailgun.com) notando que cada mes tendremos para enviar hasta 10 000 emails gratuitos.
 
 ![Registro en mailgun][mailgun-registro]
 
