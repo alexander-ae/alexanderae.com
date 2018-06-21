@@ -290,6 +290,7 @@ body.home .entry abbr {
   color: #af3a11;
 }
 .entry {
+  background: #fff;
   border: #444 solid 2px;
   border-radius: 7px;
   margin: 10px 0 20px;
