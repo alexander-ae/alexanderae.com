@@ -24,3 +24,16 @@ Entre otros, algunos de mis conocimientos o tecnologías utilizadas incluyen:
 
 [python]: http://www.python.org/
 [django]: https://www.djangoproject.com/
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Alexander Ayasca Esquives",
+  "url": "https://alexanderae.com",
+  "sameAs": [
+    "https://twitter.com/__alexander_",
+    "https://www.linkedin.com/in/alexanderae/"
+  ]
+}
+</script>
