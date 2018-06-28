@@ -126,3 +126,22 @@ utiliza el parámetro *protocol*.
 1. [¿Necesito un sitemap?](!https://support.google.com/webmasters/answer/156184?hl=es)
 
 2. [Documentación de django sobre la creación de un sitemap](!https://docs.djangoproject.com/en/2.0/ref/contrib/sitemaps/)
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Question",
+    "name": "¿Cómo implementar un sitemap en django?",
+    "text": "",
+    "dateCreated": "2018-04-24",
+    "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Django cuenta con una aplicación oficial para la creación de sitemaps. Siguiendo su documentación, los  pasos a seguir son:",
+        "dateCreated": "2018-04-24",
+        "author": {
+            "@type": "Person",
+            "name": "__alexander__"
+        }
+    }
+}
+</script>

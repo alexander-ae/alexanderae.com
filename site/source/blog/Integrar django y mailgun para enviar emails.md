@@ -77,3 +77,22 @@ webhooks, revisen su documentación, allí hay ejemplos de cómo manejarlo.
 [mailgun-validar-dominio]: pictures/mailgun-validar-dominio.png 'Validación de un dominio en mailgun'
 [digital-ocean-dns]: pictures/digital-ocean-dns.png 'Edición de registros DNS en digital ocean'
 [mailgun-credenciales]: pictures/mailgun-dominio-validado.png 'Credenciales de mailgun'
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Question",
+    "name": "¿Cómo integrar django y mailgun?",
+    "text": "",
+    "dateCreated": "2018-04-08",
+    "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La integración consiste principalment en: Apuntar el dominio, validarlo y agregar la configuración del envío de emails de django.",
+        "dateCreated": "2018-04-08",
+        "author": {
+            "@type": "Person",
+            "name": "__alexander__"
+        }
+    }
+}
+</script>

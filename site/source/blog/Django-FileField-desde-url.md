@@ -68,4 +68,21 @@ En resumen lo que hace  el código anterior es:
 - [Download a remote image and save it to a Django model
 ](!https://stackoverflow.com/a/16174886/1472750)
 
-
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Question",
+    "name": "¿Cómo descargar un archivo y almacenarlo en un modelo de django?",
+    "text": "",
+    "dateCreated": "2018-04-19",
+    "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es posible manejar la descarga de un archivo con la librería requests y la clase NamedTemporaryFile mediante las siguientes instrucciones.",
+        "dateCreated": "2018-04-19",
+        "author": {
+            "@type": "Person",
+            "name": "__alexander__"
+        }
+    }
+}
+</script>
