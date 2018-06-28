@@ -490,6 +490,20 @@ body.etiquetas #cloud .a-tag-4 {
   font-size: 2rem;
   line-height: 1.5;
 }
+/* BÚSQUEDA */
+.pagina_buscar table {
+  margin-bottom: 0;
+}
+.pagina_buscar th,
+.pagina_buscar td {
+  border-bottom: none;
+}
+.pagina_buscar .gsc-control-cse {
+  min-height: 240px;
+}
+.pagina_buscar .gcsc-branding-clickable {
+  font-size: 1rem;
+}
 /* DETALLE DE ETIQUETA */
 .body.tag ol {
   list-style-type: none;
