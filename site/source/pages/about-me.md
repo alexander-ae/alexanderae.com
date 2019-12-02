@@ -2,7 +2,7 @@ Title: About me | Alexander Ayasca Esquives
 save_as: pages/about-me.html
 summary: Hola, soy Alexander, usuario de GNU/Linux, desarrollador, lector asiduo, interesado en el opensource, la ciencia, entre otros.
 
-Hola, soy Alexander[^1], usuario de *GNU/Linux*, desarrollador, lector asiduo, interesado en el *opensource*, la ciencia, entre otros.
+Hola, soy Alexander[^1], usuario de *GNU/Linux*, desarrollador, lector asiduo, interesado en el *opensource*, la ciencia, entre otros, localizado en Lima - Perú.
 
 En cuanto al desarrollo, me oriento principalmente al ambiente web por medio del lenguaje [**python**][python] y el framework [**django**][django]. También me interesa investigar sobre temas administración de servidores, experiencia de usuario, gestión de proyectos y SEO.
 
