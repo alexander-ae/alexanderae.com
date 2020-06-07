@@ -1,10 +1,10 @@
 Title: Webscraping básico con Python - II
 Date: 2019-12-01
-Tags: webscrapping, python
-Slug: webscrapping-python-2
+Tags: webscraping, python
+Slug: webscraping-python-2
 Author: __alexander__
 
-Continuando con un post realizado hace unos meses sobre los fundamentos del webscraping: <a target='_blank' href='https://alexanderae.com/webscrapping-python.html'>Webscraping básico con Python - I</a>, en esta ocasión presento otro ejemplo práctico para obtener información de un website.
+Continuando con un post realizado hace unos meses sobre los fundamentos del webscraping: <a target='_blank' href='https://alexanderae.com/webscraping-python.html'>Webscraping básico con Python - I</a>, en esta ocasión presento otro ejemplo práctico para obtener información de un website.
 
 Para nuestra pruebas utilizaremos <a target='_blank' href='http://books.toscrape.com'>Books to scrape</a>, una página que simula ser una librería, creada con fines educativos por ScrapingHub[^1].
 

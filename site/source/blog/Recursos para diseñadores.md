@@ -73,7 +73,7 @@ Compilación de recursos para diseñadores que en algún momento me han sido de 
 
 - <a target='_blank' href='https://onepagelove.com/'>One Page Love</a>: Landing Pages con buen diseño
 
-- <a target='_blank' href='http://lapa.ninja/'>Icon store</a>
+- <a target='_blank' href='http://lapa.ninja/'>lapa.ninja</a>
 
 - <a target='_blank' href='http://uigarage.net/'>UI Garage</a>: Patrones de diseño de elementos web (Páginas 404, Dashboard, Mensajes de error, etc)
 

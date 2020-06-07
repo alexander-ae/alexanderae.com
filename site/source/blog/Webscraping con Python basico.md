@@ -1,10 +1,10 @@
-Title: Webscrapping básico con Python - I
+Title: Webscraping básico con Python - I
 Date: 2019-02-13
-Tags: webscrapping, python
-Slug: webscrapping-python
+Tags: webscraping, python
+Slug: webscraping-python
 Author: __alexander__
 
-¿Qué es webscrapping?
+¿Qué es el web scraping?
 
 Es una técnica utilizada mediante programas de software para extraer información de
 sitios web. Usualmente, estos programas simulan la navegación de un humano en la
@@ -62,13 +62,13 @@ Podemos darles un repaso en la documentación de [Mozilla Developer Network](htt
 Entonces, si utilizamos el inspector de elementos de chrome o firefox
 en la web de Hacker News podemos observar algo como:
 
-![Selector de la tabla](/pictures/scrapping_1.png)
+![Selector de la tabla](/pictures/scraping_1.png)
 
 Donde vemos que el *contenedor de la lista de historias* tiene la clase "itemlist".
 
 Y cada item de la tabla tiene la clase "storylink"
 
-![Selector de la tabla](/pictures/scrapping_1.png)
+![Selector de la tabla](/pictures/scraping_2.png)
 
 Entonces nuestro código para iterar sobre cada elemento quedaría como:
 
@@ -119,7 +119,7 @@ se pueden revisar en la [documentación de beautifulsoup](https://www.crummy.com
 
 ## Otras consideraciones
 
-Al realizar webscrapping debemos tener en cuenta puntos como:
+Al realizar webscraping debemos tener en cuenta puntos como:
 
 - La legalidad: no siempre que algo esté publicado en internet significa
 que podamos copiarlo.
@@ -131,7 +131,7 @@ un ataque DDOS e inhabilitar el website.
 - No siempre los contenidos están en el formato que deseamos, a veces tenemos
 que utilizar expresiones regulares para extraer solo lo relevante.
 
-- Protección anti-webscrapping: algunas webs tienen medidas como captchas,
+- Protección anti-webscraping: algunas webs tienen medidas como captchas,
 o bloqueos por IP al exceder cierto número de solicitudes.
 
 

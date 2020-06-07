@@ -1,7 +1,7 @@
 Title: Webscraping básico con Python - III
 Date: 2019-12-04
-Tags: webscrapping, python
-Slug: webscrapping-python-3
+Tags: webscraping, python
+Slug: webscraping-python-3
 Author: __alexander__
 
 En esta ocasión, siguiendo el ejemplo del post anterior, realizaré la misma tarea pero utilizando <strong><a href='https://scrapy.org/' target='_blank'>Scrapy</a></strong>, un framework especializado en la tarea de realizar webscraping.
