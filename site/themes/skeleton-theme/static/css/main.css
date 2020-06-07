@@ -56,9 +56,9 @@ h6 {
   color: #af3a11;
 }
 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.5;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 p img {
   display: block;
@@ -76,7 +76,7 @@ dt {
 ul,
 li,
 a {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 li p {
   display: inline;
@@ -98,7 +98,7 @@ li p {
 }
 .highlight {
   background: #333;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 15px;
   padding: 10px;
   max-height: 400px;
@@ -125,12 +125,12 @@ pre {
   display: block;
 }
 .footnote-ref {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   padding: 0 5px;
 }
 .footnote {
   margin-top: 32px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .footnote ol {
   list-style: outside decimal;
@@ -157,7 +157,7 @@ pre {
   font-weight: bold;
 }
 .footnote p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 header {
   line-height: 4rem;
@@ -274,7 +274,7 @@ body.home .entry h2,
 body.home .entry h3,
 body.home .entry h4,
 body.home .entry h5 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #222;
   font-weight: bold;
 }
@@ -286,7 +286,7 @@ body.home .entry .entry-content a {
   color: #222;
 }
 body.home .entry abbr {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #af3a11;
 }
 .entry {
@@ -296,7 +296,7 @@ body.home .entry abbr {
   margin: 10px 0 20px;
   min-height: 200px;
   position: relative;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding: 20px 0 20px 20px;
 }
 .entry h2 {
@@ -332,13 +332,13 @@ body.home .entry abbr {
   font-size: 1.8rem;
 }
 .entry-content h5 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 /* DETALLE DE ARTÍCULO */
 #article {
   margin: 0 auto;
   max-width: 900px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 #article h1 {
   line-height: 0.75;
@@ -382,7 +382,7 @@ body.home .entry abbr {
   font-size: 1.8rem;
 }
 #article .entry-content h5 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 #article .entry-content h2,
 #article .entry-content h3,
@@ -401,7 +401,7 @@ body.home .entry abbr {
   font-size: 17px;
 }
 #article pre {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 #article a {
   color: #af3a11;
