@@ -31,7 +31,7 @@
   {% endif %}
 
   {% block css %}
-    {% assets filters="cssmin", output="css/normalize.css", "css/pygments.css", "css/skeleton.css" , "css/main.css" %}
+    {% assets filters="cssmin", output="css/style.min.css", "css/normalize.css", "css/pygments.css", "css/skeleton.css" , "css/main.css" %}
       <link rel="stylesheet" href="{{ SITEURL }}/{{ ASSET_URL }}">
     {% endassets %}
 
