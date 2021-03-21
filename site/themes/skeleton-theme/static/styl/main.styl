@@ -19,32 +19,33 @@ $celeste_01 = #6490B0
 
 $color_em = $naranja_01
 
-$codehiliteBack = #333
+$codehilite = #D2DBEB
 
 $html_background = rgba(243, 243, 243, 0.5)
 
 /* BASE */
 
 html
-  background: $html_background
+  background $html_background
 
 body
-  margin: 0
-  font-family: -apple-system, Roboto, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif
+  margin 0
+  font-family -apple-system, Roboto, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif
 
-a, .link
+a,
+.link
   color $azul_oscuro_01
-  text-decoration: none
+  text-decoration none
 
   &:hover, &.active
     color $naranja_01
 
 abbr
-  border-bottom: 0
+  border-bottom 0
 
 abbr[title]
   border: none
-  text-decoration-line: none;
+  text-decoration-line none
 
 address
   font-style normal
@@ -113,7 +114,7 @@ li p
 
 // código (codehilite)
 .highlight
-  background: $codehiliteBack
+  background: $codehilite
   font-size: 1.8rem
   margin: 15px
   padding: 10px
@@ -245,7 +246,7 @@ footer
     background: $verde_oscuro_02
 
 .paginator
-  margin: 15px
+  margin 4rem
   text-align: center
 
   a
@@ -257,11 +258,13 @@ footer
     margin: 0 6px 6px 0
 
   .pag
-    width: 16px
-    height: 16px
-    display: block
-    margin: 2px 10px
-    text-align: center
+    width 16px
+    height 16px
+    display block
+    font-size 1.5rem
+    margin 0 auto
+    padding 4px
+    text-align center
 
   .active
     background-color: $naranja_01
@@ -447,7 +450,7 @@ body.home
 
 #archive-content,
 #page-content
-  margin: 0 0 30px
+  margin: 16px 0 32px
 
   h1
     font-size: 2.5rem

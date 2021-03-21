@@ -1,21 +1,25 @@
 Title: About me | Alexander | Full Stack Developer
 save_as: pages/about-me.html
-summary: Hola, soy Alexander, usuario de GNU/Linux, desarrollador, lector asiduo, interesado en el opensource, la ciencia, entre otros.
+summary: Hola, soy Alexander, Humano, desarrollador web (python/django), malo en ajedrez, juego starcraft. Creo que eso lo resume.
 
-Hola, soy Alexander, usuario de *GNU/Linux*, desarrollador, lector asiduo, interesado en el *opensource*, la ciencia, entre otros, localizado en Lima - Perú.
+Hola, soy Alexander, de Lima/Perú.
 
-En cuanto al desarrollo, me oriento principalmente al ambiente web por medio del lenguaje [**python**][python] y el framework [**django**][django]. También me interesa investigar sobre manejo de servidores, experiencia de usuario, gestión de proyectos, SEO y optimización de páginas web.
+Humano, desarrollador web ([**python**][python]/[**django**][django]), malo en ajedrez, juego starcraft.
 
-Entre otros, algunos de mis conocimientos incluyen:
+Me considero un *Full Stack Developer*, interesado principalmente en el desarrollo de aplicaciones web mediante el framework *Django*. También me interesan en gran parte los temas de:
 
-- Python: Django
-- Apache, Nginx
-- MySQL, PostgreSQL, Redis
-- GNU/Linux (Ubuntu, EndeavourOS)
-- Frameworks CSS: Bootstrap, Foundation
-- Mercurial, Git
-- Servidores: Digital Ocean, AWS
-- .. ya mencioné django ?
+- Optimización de websites
+- Web scraping
+- SEO
+- UX
+- Accesibilidad
+- Startups.
+
+Soy un usuario de *GNU/Linux*, he utilizado las distros: Ubuntu, OpenSuse, Chakra Linux y actualmente EndeavourOS. La filosofía *OpenSource* me llama mucho la atención.
+
+Me gusta la lectura, principalmente los géneros de ciencia ficción y fantasía. Adjunto mi perfil en [Goodreads](https://www.goodreads.com/user/show/30322656-alexander).
+
+Utilizo [twitter](https://twitter.com/__alexander_) como mi principal red social.
 
 [python]: http://www.python.org/
 [django]: https://www.djangoproject.com/

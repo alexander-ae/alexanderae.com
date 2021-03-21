@@ -18,12 +18,9 @@
 
     <div class="post-info">
         <abbr class="published" title="{{ article.date.isoformat() }}">
-          Publicado el {{ ' ' }} {{ article.locale_date }}
+          Publicado el: {{ ' ' }} {{ article.locale_date }}
         </abbr>
 
-        <address class="author">
-          Escrito por {{ ' ' }} <a href="{{ SITEURL }}/pages/about-me.html" title='{{AUTHOR_FULL_NAME}}'>{{ article.author }}</a>
-        </address>
     </div><!-- /.post-info -->
 
     <div class="entry-content">
